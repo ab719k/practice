@@ -149,30 +149,33 @@ tnode * delete_t(tnode *node, int val)
         printf("\n\nElement not found");
         return node;
     }
-    
+    printf("At %d \n", node->val);
     if (val < node->val) {
-        node = delete_t(node->l,val);
+        node->l = delete_t(node->l,val);
     } else if(val > node->val){
-        node = delete_t(node->r,val);
+        node->r = delete_t(node->r,val);
     } else {
-        printf("\n\n Element Found");
+        printf("\n\n Element %d Found", node->val);
         /* delete the node */
         if ( node->l == NULL) {
-            mn=node->r;
-            free(node);
-            return mn;
+            mn=node;
+            node=node->r;
+            free(mn);
+            return node;
         } else if (node->r == NULL) {
-            mn=node->l;
-            free(node);
-            return mn;
+            mn=node;
+            node = node->l;
+            free(mn);
+            return node;
         }
         mn=node;
-        while (mn->l != NULL)
+        while (mn->l->l != NULL)
             mn=mn->l;
         node->val=mn->l->val;
-        
-        free(mn->l);
-        mn->l=NULL;
+        temp=mn->l;
+        mn->l = mn->l->r;
+        free(temp);
+        return node;
     }
     return node;
 }
