@@ -29,45 +29,32 @@ enum TREE_CHOICE
 
 /* Local Functions */
 
-void insert_into(tree_node *root, int num);
-void print_tree(tree_node *root);
+tree_node *insert_into(tree_node *root, int num);
+void printTree(tree_node *node);
 int print_choice();
+int input_handling(int argc, char *argv[]);
+
+
+/*Global Variables*/
+int choice;
+int count;
+int total_count;
+int input_numbers[MAX_ARG];
+
+
+#define SUCCESS 1
+#define FAIL -1
+
 
 int main(int argc, char *argv[])
 {
-  int count, choice;
-  int total_count=0;
-  
-  int input_numbers[MAX_ARG];
-  struct binary_tree *root=NULL;
+
+  tree_node *root=NULL;
+
   struct binary_tree *temp=NULL;
-
-  printf ("This program was called with argc = %d && argv[0] = \"%s\".\n",argc, argv[0]);
-  if (argc > MAX_ARG + 1)
-    {
-       printf("Incorrect usage: overflow parameters \n");
-       return -1;
-    }
-
-  if (argc == 1)
-    {
-       printf("Incorrect usage: unsufficient parameters \n");
-       return -1;
-    }
-  if (argc > 1)
-    {
-      for (count = 1; count < argc; count++)
-	{
-	  printf("argv[%d] = %s\n", count, argv[count]);
-          input_numbers[total_count++] = atoi(argv[count]);
-	}
-    }
-  else
-    {
-      printf("The command had no other arguments.\n");
-    }
-
-   printf("Total Count = %d \n", total_count);
+    choice = input_handling(argc,argv) ;
+   if( choice != SUCCESS)
+       return choice;
 
    /* Start Creating Tree */
    if (root == NULL)
@@ -78,18 +65,20 @@ int main(int argc, char *argv[])
    } /* if (root == NULL) */
    while (total_count)
    {
-    printf("While Total Count = %d \n", total_count);
-    insert_into(root, input_numbers[total_count--]);
+     printf("While Total Count = %d \n", total_count);
+     insert_into(root, input_numbers[total_count--]);
    } /* while (total_count) */
 
-
-   while (choice = print_choice())
-   {
+    choice = 1;
+    while (choice)
+    {
+       choice = print_choice();
       switch(choice)
       {
       case EXIT:
-         return;
+         return 0;
       case DISPLAY_TREE:
+              printTree(root);
       case INSERT_ELEMENT:
       case FIND_ELEMENT:
       case DELETE_ELEMENT:
@@ -99,11 +88,50 @@ int main(int argc, char *argv[])
       case IS_FULL:
          break;
       }
-   }
-   printf("The command had no other arguments.\n");
        
+    }
+    printf("The command had no other arguments.\n");
 
+    return choice;
+    
 } /* int main(int argc, char *argv[])*/
+
+
+
+
+/* This function handles the input */
+int input_handling(int argc, char *argv[])
+{
+    printf ("This program was called with argc = %d && argv[0] = \"%s\".\n",argc, argv[0]);
+    if (argc > MAX_ARG + 1)
+    {
+        printf("Incorrect usage: overflow parameters \n");
+        return -1;
+    }
+    
+    if (argc == 1)
+    {
+        printf("Incorrect usage: unsufficient parameters \n");
+        return -1;
+    }
+    if (argc > 1)
+    {
+        for (count = 1; count < argc; count++)
+        {
+            printf("argv[%d] = %s\n", count, argv[count]);
+            input_numbers[total_count++] = atoi(argv[count]);
+        }
+    }
+    else
+    {
+        printf("The command had no other arguments.\n");
+    }
+    
+    printf("Total Count = %d \n", total_count);
+    return 1;
+
+
+} /* end of input_handling */
 
 #define INSERT_NODE(temp, num)   temp = malloc(sizeof(tree_node)); \
                      temp->l = temp->r = NULL; \
@@ -129,7 +157,7 @@ int print_choice()
   return choice;
 }
 
-tree_node insert_into(tree_node *root, int num)
+tree_node * insert_into(tree_node *root, int num)
 {
 
   struct binary_tree *temp = NULL;
@@ -151,10 +179,22 @@ tree_node insert_into(tree_node *root, int num)
     {
       root->r = insert_into(root->r, num);
     }
+    return root;
 }
 
 
-
+/*
+ Given a binary search tree, print out
+ its data elements in increasing
+ sorted order.
+ */
+void printTree(tree_node *node) {
+    if (node == NULL) return;
+    printTree(node->l);
+    printf("%d ", node->val);
+    printTree(node->r);
+    //printf("/n");
+}
 
 
 
