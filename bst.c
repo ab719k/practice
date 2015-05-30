@@ -7,22 +7,21 @@
 typedef struct binary_tree tree_node;
 
 struct binary_tree {
- tree_node *l;
- tree_node *r;
- int val;   
+    tree_node *l;
+    tree_node *r;
+    int val;   
 };
 
-enum TREE_CHOICE
-{
-   EXIT,
-   DISPLAY_TREE,
-   INSERT_ELEMENT,
-   FIND_ELEMENT,
-   DELETE_ELEMENT,
-   DEPTH_OF_TREE,
-   DEPTH_OF_ELEM,
-   IS_EMPTY,
-   IS_FULL
+enum TREE_CHOICE {
+    EXIT,
+    DISPLAY_TREE,
+    INSERT_ELEMENT,
+    FIND_ELEMENT,
+    DELETE_ELEMENT,
+    DEPTH_OF_TREE,
+    DEPTH_OF_ELEM,
+    IS_EMPTY,
+    IS_FULL
 };
 
 #define MAX_ARG 21
@@ -33,12 +32,16 @@ tree_node *insert_into(tree_node *root, int num);
 void printTree(tree_node *node);
 int enter_choice();
 int input_handling(int argc, char *argv[]);
+tree_node * present(tree_node *node, int val);
+int maxDepth(tree_node* node)
+
 
 
 /*Global Variables*/
 int choice;
 int count;
 int total_count;
+
 int input_numbers[MAX_ARG];
 
 
@@ -50,21 +53,16 @@ int main(int argc, char *argv[])
 {
 
     tree_node *root=NULL;
-
-    struct binary_tree *temp=NULL;
+    tree_node *temp=NULL;
+    int value=0;
+    
+    
     choice = input_handling(argc,argv) ;
     if( choice != SUCCESS)
        return choice;
 
    /* Start Creating Tree */
-/*   if (root == NULL)
-   {
-      root = malloc(sizeof(tree_node));
-      root->l = root->r = NULL;
-      root->val = input_numbers[total_count--];
-   } / * if (root == NULL) */
-    while (total_count)
-    {
+    while (total_count) {
         printf("While Total Count = %d, Inserting %d \n", total_count, input_numbers[total_count-1]);
         root = insert_into(root, input_numbers[total_count-1]);
         total_count--;
@@ -74,11 +72,9 @@ int main(int argc, char *argv[])
     printTree(root);
     printf("\n\n");
     choice = 1;
-    while (choice)
-    {
+    while (choice) {
         choice = enter_choice();
-        switch(choice)
-        {
+        switch(choice) {
             case EXIT:
                 return 0;
             case DISPLAY_TREE:
@@ -86,19 +82,16 @@ int main(int argc, char *argv[])
                 printTree(root);
                 break;
             case INSERT_ELEMENT:
-            {
-                int val;
-                printf("\n\n Insert Element : \n\n");
-                scanf("%d", &val);
+                printf("\n\n Insert Element : ");
+                scanf("%d", &value);
                 root =insert_into(root,val);
-            }
                 break;
             case FIND_ELEMENT:
-            {
-                int val;
                 printf("\n\n Find Element : \n\n");
-                Find(root,val);
-            }
+                scanf("%d", &value);
+                if (NULL==present(root,value)) {
+                    printf("Element not found, ");
+                }
                 break;
             case DELETE_ELEMENT:
                 break;
@@ -193,13 +186,13 @@ int enter_choice()
   return choice;
 }
 
-tree_node * insert_into(tree_node *root, int num)
+tree_node * insert_into(tree_node *node, int num)
 {
     
   struct binary_tree *temp = NULL;
-    if (root != NULL)
+    if (node != NULL)
     {
-        printf("At %d\n", root->val);
+        printf("At %d\n", node->val);
     }
     else
     {
@@ -207,14 +200,18 @@ tree_node * insert_into(tree_node *root, int num)
         return temp;
     }
     
-    if(root->val > num)
+    if(node->val > num)
     {
-       root->l = insert_into(root->l, num);
-    } else if (root->val < num)
+       node->l = insert_into(node->l, num);
+    } else if (node->val < num)
     {
-      root->r = insert_into(root->r, num);
+      node->r = insert_into(node->r, num);
     }
-    return root;
+    else
+    {
+        printf("Duplicate Entry Not added!");
+    }
+    return node;
 }
 
 
@@ -234,8 +231,52 @@ void printTree(tree_node *node) {
     //printf("/n");
 }
 
+/*
+ Given a binary search tree, find out
+ if data elements is present.
+ */
+tree_node * present(tree_node *node, int val)
+{
+    tree_node* temp = node;
+    
+    while (temp != NULL)
+    {
+        if (temp->val == val)
+        {
+            printf("Element Found");
+            return temp;
+        }
+        else if (val < temp->val)
+        {
+            temp=temp->l;
+        }
+        else
+        {
+            temp=temp->r;
+        }
+        
+    }
+    return temp;
+}
 
-
+/*
+ Compute the "maxDepth" of a tree -- the number of nodes along
+ the longest path from the root node down to the farthest leaf node.
+ */
+int maxDepth(tree_node* node) {
+    if (node==NULL) {
+        return(0);
+    }
+    else {
+        // compute the depth of each subtree
+        int lDepth = maxDepth(node->left);
+        int rDepth = maxDepth(node->right);
+        // use the larger one
+        if (lDepth > rDepth) return(lDepth+1);
+        else return(rDepth+1);
+  
+    }
+}
 
 #if 0
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
