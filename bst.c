@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define COMPACT
 
-
-typedef struct binary_tree tree_node;
+typedef struct binary_tree tnode;
 
 struct binary_tree {
-    tree_node *l;
-    tree_node *r;
+    tnode *l;
+    tnode *r;
     int val;   
 };
 
@@ -28,14 +28,16 @@ enum TREE_CHOICE {
 
 /* Local Functions */
 
-tree_node *insert_into(tree_node *root, int num);
-void printTree(tree_node *node);
+tnode *insert_into(tnode *root, int num);
+void printTree(tnode *node);
 int enter_choice();
 int input_handling(int argc, char *argv[]);
-tree_node * present(tree_node *node, int val);
-int maxDepth(tree_node* node)
-
-
+tnode * present(tnode *node, int val);
+int maxDepth(tnode* node);
+int _print_t(tnode *tree, int is_left, int offset, int depth, char s[20][255]);
+int print_t(tnode *tree);
+tnode * delete_t(tnode *tree, int val);
+tnode* get_min_node(tnode *temp);
 
 /*Global Variables*/
 int choice;
@@ -52,8 +54,8 @@ int input_numbers[MAX_ARG];
 int main(int argc, char *argv[])
 {
 
-    tree_node *root=NULL;
-    tree_node *temp=NULL;
+    tnode *root=NULL;
+    tnode *temp=NULL;
     int value=0;
     
     
@@ -69,8 +71,10 @@ int main(int argc, char *argv[])
     } /* while (total_count) */
     
     printf("\n\nThe tree so far \n\n");
-    printTree(root);
-    printf("\n\n");
+    //printTree(root);
+    //printf("\n\nAnother version of The tree so far \n\n");
+    print_t(root);
+    //printf("\n\n");
     choice = 1;
     while (choice) {
         choice = enter_choice();
@@ -79,29 +83,41 @@ int main(int argc, char *argv[])
                 return 0;
             case DISPLAY_TREE:
                 printf("\n\n Printing Tree \n\n");
-                printTree(root);
+                //printTree(root);
+                print_t(root);
                 break;
             case INSERT_ELEMENT:
                 printf("\n\n Insert Element : ");
                 scanf("%d", &value);
-                root =insert_into(root,val);
+                root = insert_into(root,value);
                 break;
             case FIND_ELEMENT:
                 printf("\n\n Find Element : \n\n");
                 scanf("%d", &value);
                 if (NULL==present(root,value)) {
-                    printf("Element not found, ");
+                    printf("\nElement not found, ");
                 }
                 break;
             case DELETE_ELEMENT:
+                print_t(root);
+                printf("\nElement to delete: ");
+                scanf("%d",&value);
+                root = delete_t(root,value);
+                printTree(root);
+                printf("\nElement Deleted\n");
+                print_t(root);
                 break;
             case DEPTH_OF_TREE:
+                printf("The max depth of tree is: %d", maxDepth(root));
                 break;
             case IS_EMPTY:
+                
                 break;
             case IS_FULL:
+                
                 break;
             default:
+                
                 break;
       }
        
@@ -113,6 +129,122 @@ int main(int argc, char *argv[])
 } /* int main(int argc, char *argv[])*/
 
 
+
+tnode* get_min_node(tnode *temp)
+{
+    tnode *mn;
+    mn=temp;
+    while (mn->l != NULL)
+        mn=mn->l;
+    return mn;
+}
+
+
+tnode * delete_t(tnode *node, int val)
+{
+    tnode *mn;
+    tnode *temp;
+    
+    if (node==NULL) {
+        printf("\n\nElement not found");
+        return node;
+    }
+    
+    if (val < node->val) {
+        node = delete_t(node->l,val);
+    } else if(val > node->val){
+        node = delete_t(node->r,val);
+    } else {
+        printf("\n\n Element Found");
+        /* delete the node */
+        if ( node->l == NULL) {
+            mn=node->r;
+            free(node);
+            return mn;
+        } else if (node->r == NULL) {
+            mn=node->l;
+            free(node);
+            return mn;
+        }
+        mn=node;
+        while (mn->l != NULL)
+            mn=mn->l;
+        node->val=mn->l->val;
+        
+        free(mn->l);
+        mn->l=NULL;
+    }
+    return node;
+}
+
+
+int _print_t(tnode *tree, int is_left, int offset, int depth, char s[20][255])
+{
+    char b[20];
+    int width = 5;
+    
+    if (!tree) return 0;
+    
+    sprintf(b, "(%03d)", tree->val);
+    
+    int left  = _print_t(tree->l,  1, offset,                depth + 1, s);
+    int right = _print_t(tree->r, 0, offset + left + width, depth + 1, s);
+    
+#ifdef COMPACT
+    for (int i = 0; i < width; i++)
+        s[depth][offset + left + i] = b[i];
+    
+    if (depth && is_left) {
+        
+        for (int i = 0; i < width + right; i++)
+            s[depth - 1][offset + left + width/2 + i] = '-';
+        
+        s[depth - 1][offset + left + width/2] = '.';
+        
+    } else if (depth && !is_left) {
+        
+        for (int i = 0; i < left + width; i++)
+            s[depth - 1][offset - width/2 + i] = '-';
+        
+        s[depth - 1][offset + left + width/2] = '.';
+    }
+#else
+    for (int i = 0; i < width; i++)
+        s[2 * depth][offset + left + i] = b[i];
+    
+    if (depth && is_left) {
+        
+        for (int i = 0; i < width + right; i++)
+            s[2 * depth - 1][offset + left + width/2 + i] = '-';
+        
+        s[2 * depth - 1][offset + left + width/2] = '+';
+        s[2 * depth - 1][offset + left + width + right + width/2] = '+';
+        
+    } else if (depth && !is_left) {
+        
+        for (int i = 0; i < left + width; i++)
+            s[2 * depth - 1][offset - width/2 + i] = '-';
+        
+        s[2 * depth - 1][offset + left + width/2] = '+';
+        s[2 * depth - 1][offset - width/2 - 1] = '+';
+    }
+#endif
+    
+    return left + width + right;
+}
+
+int print_t(tnode *tree)
+{
+    char s[20][255];
+    for (int i = 0; i < 20; i++)
+        sprintf(s[i], "%80s", " ");
+    
+    _print_t(tree, 0, 0, 0, s);
+    
+    for (int i = 0; i < 20; i++)
+        printf("%s\n", s[i]);
+    return 0;
+}
 
 
 /* This function handles the input */
@@ -155,13 +287,13 @@ inline temp_node * new_node()
 {
     temp_node *node;
     
-    temp = malloc(sizeof(tree_node));
+    temp = malloc(sizeof(tnode));
     temp->l = temp->r = NULL;
     temp->val = num;
 }
 #else
 
-#define INSERT_NODE(temp, num)   temp = malloc(sizeof(tree_node)); \
+#define INSERT_NODE(temp, num)   temp = malloc(sizeof(tnode)); \
 temp->l = temp->r = NULL; \
 temp->val = num
 
@@ -186,7 +318,7 @@ int enter_choice()
   return choice;
 }
 
-tree_node * insert_into(tree_node *node, int num)
+tnode * insert_into(tnode *node, int num)
 {
     
   struct binary_tree *temp = NULL;
@@ -220,7 +352,7 @@ tree_node * insert_into(tree_node *node, int num)
  its data elements in increasing
  sorted order.
  */
-void printTree(tree_node *node) {
+void printTree(tnode *node) {
     
     if (node == NULL) return;
     printTree(node->l);
@@ -231,27 +363,24 @@ void printTree(tree_node *node) {
     //printf("/n");
 }
 
+
 /*
  Given a binary search tree, find out
  if data elements is present.
  */
-tree_node * present(tree_node *node, int val)
+tnode * present(tnode *node, int val)
 {
-    tree_node* temp = node;
+    tnode* temp = node;
     
-    while (temp != NULL)
-    {
-        if (temp->val == val)
-        {
+    while (temp != NULL) {
+        if (temp->val == val) {
             printf("Element Found");
             return temp;
         }
-        else if (val < temp->val)
-        {
+        else if (val < temp->val) {
             temp=temp->l;
         }
-        else
-        {
+        else {
             temp=temp->r;
         }
         
@@ -263,275 +392,20 @@ tree_node * present(tree_node *node, int val)
  Compute the "maxDepth" of a tree -- the number of nodes along
  the longest path from the root node down to the farthest leaf node.
  */
-int maxDepth(tree_node* node) {
+int maxDepth(tnode* node) {
     if (node==NULL) {
         return(0);
     }
     else {
         // compute the depth of each subtree
-        int lDepth = maxDepth(node->left);
-        int rDepth = maxDepth(node->right);
+        int lD = maxDepth(node->l);
+        int rD = maxDepth(node->r);
         // use the larger one
-        if (lDepth > rDepth) return(lDepth+1);
-        else return(rDepth+1);
+        if (lD > rD)
+            return(lD+1);
+        else
+            return(rD+1);
   
     }
+    return 0;
 }
-
-#if 0
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!Code originally from /http://www.openasthra.com/c-tidbits/printing-binary-trees-in-ascii/
-!!! Just saved it, cause the website is down.
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Printing Binary Trees in Ascii
-
-Here we are not going to discuss what binary trees are (please refer this, if you are looking for binary search trees), or their operations but printing them in ascii.
-
-The below routine prints tree in ascii for a given Tree representation which contains list of nodes, and node structure is this
-*/
-    struct Tree 
-    {
-      Tree * left, * right;
-      int element;
-    };
-
-/*This pic illustrates what the below routine does on canvas..
-ascii tree
-
-Here is the printing routine..
-
-    b5855d39a6b8a2735ddcaa04a404c125001 
-
-Auxiliary routines..
-*/
-    //This function prints the given level of the given tree, assuming
-    //that the node has the given x cordinate.
-    void print_level(asciinode *node, int x, int level) 
-    {
-      int i, isleft;
-      if (node == NULL) return;
-      isleft = (node->parent_dir == -1);
-      if (level == 0) 
-      {
-        for (i=0; i<(x-print_next-((node->lablen-isleft)/2)); i++) 
-        {
-          printf(" ");
-        }
-        print_next += i;
-        printf("%s", node->label);
-        print_next += node->lablen;
-      } 
-      else if (node->edge_length >= level) 
-      {
-        if (node->left != NULL) 
-        {
-          for (i=0; i<(x-print_next-(level)); i++) 
-          {
-            printf(" ");
-          }
-          print_next += i;
-          printf("/");
-          print_next++;
-        }
-        if (node->right != NULL) 
-        {
-          for (i=0; i<(x-print_next+(level)); i++) 
-          {
-            printf(" ");
-          }
-          print_next += i;
-          printf("\\");
-          print_next++;
-        }
-      } 
-      else 
-      {
-        print_level(node->left, 
-                    x-node->edge_length-1, 
-                    level-node->edge_length-1);
-        print_level(node->right, 
-                    x+node->edge_length+1, 
-                    level-node->edge_length-1);
-      }
-    }
-
-
-    //This function fills in the edge_length and 
-    //height fields of the specified tree
-    void compute_edge_lengths(asciinode *node) 
-    {
-      int h, hmin, i, delta;
-      if (node == NULL) return;
-      compute_edge_lengths(node->left);
-      compute_edge_lengths(node->right);
-
-      /* first fill in the edge_length of node */
-      if (node->right == NULL && node->left == NULL) 
-      {
-        node->edge_length = 0;
-      } 
-      else 
-      {
-        if (node->left != NULL) 
-        {
-          for (i=0; i<node->left->height && i < MAX_HEIGHT; i++) 
-          {
-            rprofile[i] = -INFINITY;
-          }
-          compute_rprofile(node->left, 0, 0);
-          hmin = node->left->height;
-        } 
-        else 
-        {
-          hmin = 0;
-        }
-        if (node->right != NULL) 
-        {
-          for (i=0; i<node->right->height && i < MAX_HEIGHT; i++) 
-          {
-            lprofile[i] = INFINITY;
-          }
-          compute_lprofile(node->right, 0, 0);
-          hmin = MIN(node->right->height, hmin);
-        } 
-        else 
-        {
-          hmin = 0;
-        }
-        delta = 4;
-        for (i=0; i<hmin; i++) 
-        {
-          delta = MAX(delta, gap + 1 + rprofile[i] - lprofile[i]);
-        }
-
-        //If the node has two children of height 1, then we allow the
-        //two leaves to be within 1, instead of 2 
-        if (((node->left != NULL && node->left->height == 1) ||
-              (node->right != NULL && node->right->height == 1))&&delta>4) 
-        {
-          delta--;
-        }
-
-        node->edge_length = ((delta+1)/2) - 1;
-      }
-
-      //now fill in the height of node
-      h = 1;
-      if (node->left != NULL) 
-      {
-        h = MAX(node->left->height + node->edge_length + 1, h);
-      }
-      if (node->right != NULL) 
-      {
-        h = MAX(node->right->height + node->edge_length + 1, h);
-      }
-      node->height = h;
-    }
-
-    asciinode * build_ascii_tree_recursive(Tree * t) 
-    {
-      asciinode * node;
-
-      if (t == NULL) return NULL;
-
-      node = malloc(sizeof(asciinode));
-      node->left = build_ascii_tree_recursive(t->left);
-      node->right = build_ascii_tree_recursive(t->right);
-
-      if (node->left != NULL) 
-      {
-        node->left->parent_dir = -1;
-      }
-
-      if (node->right != NULL) 
-      {
-        node->right->parent_dir = 1;
-      }
-
-      sprintf(node->label, "%d", t->element);
-      node->lablen = strlen(node->label);
-
-      return node;
-    }
-
-
-    //Copy the tree into the ascii node structre
-    asciinode * build_ascii_tree(Tree * t) 
-    {
-      asciinode *node;
-      if (t == NULL) return NULL;
-      node = build_ascii_tree_recursive(t);
-      node->parent_dir = 0;
-      return node;
-    }
-
-    //Free all the nodes of the given tree
-    void free_ascii_tree(asciinode *node) 
-    {
-      if (node == NULL) return;
-      free_ascii_tree(node->left);
-      free_ascii_tree(node->right);
-      free(node);
-    }
-
-    //The following function fills in the lprofile array for the given tree.
-    //It assumes that the center of the label of the root of this tree
-    //is located at a position (x,y).  It assumes that the edge_length
-    //fields have been computed for this tree.
-    void compute_lprofile(asciinode *node, int x, int y) 
-    {
-      int i, isleft;
-      if (node == NULL) return;
-      isleft = (node->parent_dir == -1);
-      lprofile[y] = MIN(lprofile[y], x-((node->lablen-isleft)/2));
-      if (node->left != NULL) 
-      {
-        for (i=1; i <= node->edge_length && y+i < MAX_HEIGHT; i++) 
-        {
-          lprofile[y+i] = MIN(lprofile[y+i], x-i);
-        }
-      }
-      compute_lprofile(node->left, x-node->edge_length-1, y+node->edge_length+1);
-      compute_lprofile(node->right, x+node->edge_length+1, y+node->edge_length+1);
-    }
-
-    void compute_rprofile(asciinode *node, int x, int y) 
-    {
-      int i, notleft;
-      if (node == NULL) return;
-      notleft = (node->parent_dir != -1);
-      rprofile[y] = MAX(rprofile[y], x+((node->lablen-notleft)/2));
-      if (node->right != NULL) 
-      {
-        for (i=1; i <= node->edge_length && y+i < MAX_HEIGHT; i++) 
-        {
-          rprofile[y+i] = MAX(rprofile[y+i], x+i);
-        }
-      }
-      compute_rprofile(node->left, x-node->edge_length-1, y+node->edge_length+1);
-      compute_rprofile(node->right, x+node->edge_length+1, y+node->edge_length+1);
-    }
-
-/*
-Here is the asciii tree structure…
-*/
-    struct asciinode_struct
-    {
-      asciinode * left, * right;
-
-      //length of the edge from this node to its children
-      int edge_length; 
-
-      int height;      
-
-      int lablen;
-
-      //-1=I am left, 0=I am root, 1=right   
-      int parent_dir;   
-
-      //max supported unit32 in dec, 10 digits max
-      char label[11];  
-    };
-
-#endif
-
