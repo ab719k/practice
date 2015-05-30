@@ -31,7 +31,7 @@ enum TREE_CHOICE
 
 tree_node *insert_into(tree_node *root, int num);
 void printTree(tree_node *node);
-int print_choice();
+int enter_choice();
 int input_handling(int argc, char *argv[]);
 
 
@@ -49,44 +49,67 @@ int input_numbers[MAX_ARG];
 int main(int argc, char *argv[])
 {
 
-  tree_node *root=NULL;
+    tree_node *root=NULL;
 
-  struct binary_tree *temp=NULL;
+    struct binary_tree *temp=NULL;
     choice = input_handling(argc,argv) ;
-   if( choice != SUCCESS)
+    if( choice != SUCCESS)
        return choice;
 
    /* Start Creating Tree */
-   if (root == NULL)
+/*   if (root == NULL)
    {
       root = malloc(sizeof(tree_node));
       root->l = root->r = NULL;
       root->val = input_numbers[total_count--];
-   } /* if (root == NULL) */
-   while (total_count)
-   {
-     printf("While Total Count = %d \n", total_count);
-     insert_into(root, input_numbers[total_count--]);
-   } /* while (total_count) */
-
+   } / * if (root == NULL) */
+    while (total_count)
+    {
+        printf("While Total Count = %d, Inserting %d \n", total_count, input_numbers[total_count-1]);
+        root = insert_into(root, input_numbers[total_count-1]);
+        total_count--;
+    } /* while (total_count) */
+    
+    printf("\n\nThe tree so far \n\n");
+    printTree(root);
+    printf("\n\n");
     choice = 1;
     while (choice)
     {
-       choice = print_choice();
-      switch(choice)
-      {
-      case EXIT:
-         return 0;
-      case DISPLAY_TREE:
-              printTree(root);
-      case INSERT_ELEMENT:
-      case FIND_ELEMENT:
-      case DELETE_ELEMENT:
-      case DEPTH_OF_TREE:
-      case IS_EMPTY:
-        break;
-      case IS_FULL:
-         break;
+        choice = enter_choice();
+        switch(choice)
+        {
+            case EXIT:
+                return 0;
+            case DISPLAY_TREE:
+                printf("\n\n Printing Tree \n\n");
+                printTree(root);
+                break;
+            case INSERT_ELEMENT:
+            {
+                int val;
+                printf("\n\n Insert Element : \n\n");
+                scanf("%d", &val);
+                root =insert_into(root,val);
+            }
+                break;
+            case FIND_ELEMENT:
+            {
+                int val;
+                printf("\n\n Find Element : \n\n");
+                Find(root,val);
+            }
+                break;
+            case DELETE_ELEMENT:
+                break;
+            case DEPTH_OF_TREE:
+                break;
+            case IS_EMPTY:
+                break;
+            case IS_FULL:
+                break;
+            default:
+                break;
       }
        
     }
@@ -133,12 +156,25 @@ int input_handling(int argc, char *argv[])
 
 } /* end of input_handling */
 
+
+#if 0
+inline temp_node * new_node()
+{
+    temp_node *node;
+    
+    temp = malloc(sizeof(tree_node));
+    temp->l = temp->r = NULL;
+    temp->val = num;
+}
+#else
+
 #define INSERT_NODE(temp, num)   temp = malloc(sizeof(tree_node)); \
-                     temp->l = temp->r = NULL; \
-                     temp->val = num
+temp->l = temp->r = NULL; \
+temp->val = num
 
+#endif
 
-int print_choice()
+int enter_choice()
 {
   int choice;
   printf("Choose one of the following or 0 to exit\n");
@@ -159,15 +195,14 @@ int print_choice()
 
 tree_node * insert_into(tree_node *root, int num)
 {
-
+    
   struct binary_tree *temp = NULL;
     if (root != NULL)
     {
-        
+        printf("At %d\n", root->val);
     }
     else
     {
-        printf("At node %d Insert into tree the number = %d \n", root->val, num);
         INSERT_NODE(temp,num);
         return temp;
     }
@@ -189,9 +224,12 @@ tree_node * insert_into(tree_node *root, int num)
  sorted order.
  */
 void printTree(tree_node *node) {
+    
     if (node == NULL) return;
     printTree(node->l);
+    if (node != NULL)
     printf("%d ", node->val);
+    else printf(" NULL ");
     printTree(node->r);
     //printf("/n");
 }
