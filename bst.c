@@ -27,6 +27,8 @@ enum TREE_CHOICE
 
 #define MAX_ARG 21
 
+/* Local Functions */
+
 void insert_into(tree_node *root, int num);
 void print_tree(tree_node *root);
 int print_choice();
