@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define COMPACT
+/*#define COMPACT*/
+
+#define DEBUG_ON
+
 
 typedef struct binary_tree tnode;
 
@@ -39,13 +42,16 @@ int _print_t(tnode *tree, int is_left, int offset, int depth, char s[20][255]);
 int print_t(tnode *tree);
 tnode * delete_t(tnode *tree, int val);
 tnode* get_min_node(tnode *temp);
+int max(int a, int b); /*A utility function to get maximum of two integers*/
+int height(tnode *N);/* A utility function to get height of the tree */
+
 
 /*Global Variables*/
 int choice;
 int count;
-int total_count;
+int total_count=15;
 
-int input_numbers[MAX_ARG];
+int input_numbers[MAX_ARG] ={15, 27, 42, 5, 22, 8, 75, 500, 7, 20, 30, 100, 10, 50, 25};
 
 
 #define SUCCESS 1
@@ -58,7 +64,6 @@ int main(int argc, char *argv[])
     tnode *root=NULL;
     tnode *temp=NULL;
     int value=0;
-    
     
     choice = input_handling(argc,argv) ;
     if( choice != SUCCESS)
@@ -150,7 +155,9 @@ tnode * delete_t(tnode *node, int val)
         printf("\n\nElement not found");
         return node;
     }
+#ifdef DEBUG_ON
     printf("At %d \n", node->val);
+#endif
     if (val < node->val) {
         node->l = delete_t(node->l,val);
     } else if(val > node->val){
@@ -190,8 +197,8 @@ int _print_t(tnode *tree, int is_left, int offset, int depth, char s[20][255])
 
     if (!tree) return 0;
     
-    sprintf(b, "(%03d)", tree->val);
-    
+/*    sprintf(b, "(%03d)", tree->val);*/
+    sprintf(b, "(%d,%d)", tree->val,tree->height);
     int left  = _print_t(tree->l,  1, offset,                depth + 1, s);
     int right = _print_t(tree->r, 0, offset + left + width, depth + 1, s);
     
@@ -248,7 +255,7 @@ int print_t(tnode *tree)
     
     _print_t(tree, 0, 0, 0, s);
     
-    for (i = 0; i < 20; i++)
+    for (i = 0; i < 2*height(tree); i++)
         printf("%s\n", s[i]);
     return 0;
 }
@@ -266,11 +273,13 @@ int input_handling(int argc, char *argv[])
     
     if (argc == 1)
     {
-        printf("Incorrect usage: unsufficient parameters \n");
-        return -1;
+        printf("Incorrect usage: unsufficient parameters, Seeting array to default \n");
+        return 1;
+       
     }
     if (argc > 1)
     {
+        total_count=0;
         for (count = 1; count < argc; count++)
         {
             printf("argv[%d] = %s\n", count, argv[count]);
@@ -289,6 +298,22 @@ int input_handling(int argc, char *argv[])
 } /* end of input_handling */
 
 
+
+ 
+// A utility function to get height of the tree
+int height(tnode *N)
+{
+    if (N == NULL)
+        return 0;
+    return N->height;
+}
+ 
+// A utility function to get maximum of two integers
+int max(int a, int b)
+{
+    return (a > b)? a : b;
+}
+
 #if 0
 inline temp_node * new_node()
 {
@@ -297,12 +322,17 @@ inline temp_node * new_node()
     temp = malloc(sizeof(tnode));
     temp->l = temp->r = NULL;
     temp->val = num;
+#ifdef AVL_TREE
+    temp->height = 1;
+#endif
+
 }
 #else
 
 #define INSERT_NODE(temp, num)   temp = malloc(sizeof(tnode)); \
 temp->l = temp->r = NULL; \
-temp->val = num
+temp->val = num; \
+temp->height = 1
 
 #endif
 
@@ -325,10 +355,16 @@ int enter_choice()
   return choice;
 }
 
+
+/*
+This program insert a node into the tree
+*/
 tnode * insert_into(tnode *node, int num)
 {
     
-  struct binary_tree *temp = NULL;
+    struct binary_tree *temp = NULL;
+    int lh=0,rh=0;
+
     if (node != NULL)
     {
         printf("At %d\n", node->val);
@@ -350,7 +386,12 @@ tnode * insert_into(tnode *node, int num)
     {
         printf("Duplicate Entry Not added!");
     }
+    
+    node->height = max(height(node->l),height(node->r)) +1;
+    
+
     return node;
+
 }
 
 
