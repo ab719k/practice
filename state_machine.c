@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     };
     return (0);
 
-
+}
 
 /********************************************************************************
  * stateEval (event)
@@ -110,15 +110,18 @@ void stateEval(event e)
  * action functions
  **********************************************************************/
  
-void action_s1_e1() {
+void action_s1_e1(void)
+    {
   printf("action1.1 \n");
 }
  
-void action_s1_e2() {
+void action_s1_e2()
+    {
   printf("action1.2 \n");
 }
  
- void action_s1_e3() {
+ void action_s1_e3()
+    {
   printf("action1.3 \n");
  }
  
@@ -148,4 +151,3 @@ void action_s1_e2() {
 
 
 
-}
