@@ -1,5 +1,8 @@
 /* State machine implementation */
 
+#include<stdio.h>
+#include<stdlib.h>
+
 
 
 typedef enum {
@@ -16,6 +19,11 @@ typedef enum {
 
 typedef void (*action)();
  
+typedef struct {
+    state nextState;       // Enumerator for the next state
+    action actionToDo;     // function-pointer to the action that shall be released in current state
+}  stateElement;               // structure for the elements in the state-event matrix
+
 // General functions
 void stateEval(event e);
 void exit(int status);
@@ -32,17 +40,13 @@ void getIOValues(void);
  void action_s3_e2(void);
  void action_s3_e3(void);
 
+
 stateElement stateMatrix[3][3] = {
-   { {STATE1, action_s1_e1}, {STATE2, actions_1_e2}, {STATE3, action_s1_3} },
-   { {STATE2, action_s2_e1}, {STATE2, actions_2_e2}, {STATE3, action_s2_3} },
-   { {STATE3, action_s3_e1}, {STATE3, actions_3_e2}, {STATE3, action_s3_3} }
+   { {STATE1, action_s1_e1}, {STATE2, action_s1_e2}, {STATE3, action_s1_e3} },
+   { {STATE2, action_s2_e1}, {STATE2, action_s2_e2}, {STATE3, action_s2_e3} },
+   { {STATE3, action_s3_e1}, {STATE3, action_s3_e2}, {STATE3, action_s3_e3} }
 };
 
-
-typedef struct {
-    state nextState;       // Enumerator for the next state
-    action actionToDo;     // function-pointer to the action that shall be released in current state
-}  stateElement;               // structure for the elements in the state-event matrix
 
 
 state  currentState = STATE1;
@@ -134,11 +138,11 @@ void action_s1_e2() {
   printf("action3.1 \n");
  }
  
- void action_s_s3_e2() {
+ void action_s3_e2() {
   printf("action3.2 \n");
  }
  
- void action_S3_e3() {
+ void action_s3_e3() {
   printf("action3.3 \n");
  }
 
