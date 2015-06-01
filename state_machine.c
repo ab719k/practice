@@ -43,8 +43,8 @@ void getIOValues(void);
 
 stateElement stateMatrix[3][3] = {
    { {STATE1, action_s1_e1}, {STATE2, action_s1_e2}, {STATE3, action_s1_e3} },
-   { {STATE2, action_s2_e1}, {STATE2, action_s2_e2}, {STATE3, action_s2_e3} },
-   { {STATE3, action_s3_e1}, {STATE3, action_s3_e2}, {STATE3, action_s3_e3} }
+   { {STATE2, action_s2_e1}, {STATE2, action_s2_e2}, {STATE2, action_s2_e3} },
+   { {STATE3, action_s3_e1}, {STATE3, action_s3_e2}, {STATE1, action_s3_e3} }
 };
 
 
@@ -55,7 +55,7 @@ int check_input();
 
 int check_input()
 {
-  return 1;
+  return 0;
 }
 
 int main(int argc, char *argv[])
@@ -147,6 +147,7 @@ void action_s1_e2()
  
  void action_s3_e3() {
   printf("action3.3 \n");
+     //exit(0);
  }
 
 
