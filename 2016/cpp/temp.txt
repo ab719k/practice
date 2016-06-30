@@ -1,0 +1,740 @@
+18:33:50.415219 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:50.443594 IP 173.194.68.189.https > 192.168.8.122.46805: UDP, length 419
+18:33:50.450100 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:50.469373 IP 192.168.8.122.46805 > 173.194.68.189.https: UDP, length 38
+18:33:50.470408 IP 209.85.201.189.https > 192.168.8.122.52521: UDP, length 421
+18:33:50.496580 IP 192.168.8.122.52521 > 209.85.201.189.https: UDP, length 41
+18:33:50.871154 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1840249420, win 29200, options [mss 1460,sackOK,TS val 8045252 ecr 0,nop,wscale 7], length 0
+18:33:50.871388 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3904488530, win 29200, options [mss 1460,sackOK,TS val 8045252 ecr 0,nop,wscale 7], length 0
+18:33:50.892423 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [S.], seq 81109139, ack 1840249421, win 17898, options [mss 8961,sackOK,TS val 262591509 ecr 8045252,nop,wscale 8], length 0
+18:33:50.892460 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045257 ecr 262591509], length 0
+18:33:50.892647 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045257 ecr 262591509], length 517
+18:33:50.895570 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [S.], seq 710340626, ack 3904488531, win 17898, options [mss 8961,sackOK,TS val 262591510 ecr 8045252,nop,wscale 8], length 0
+18:33:50.895592 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045258 ecr 262591510], length 0
+18:33:50.895725 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045258 ecr 262591510], length 517
+18:33:50.915527 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:50.918621 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [.], ack 518, win 75, options [nop,nop,TS val 262591515 ecr 8045257], length 0
+18:33:50.918631 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262591515 ecr 8045257], length 137
+18:33:50.918637 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 0
+18:33:50.918742 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 51
+18:33:50.919140 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 498
+18:33:50.919304 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [.], ack 518, win 75, options [nop,nop,TS val 262591515 ecr 8045258], length 0
+18:33:50.919311 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262591515 ecr 8045258], length 137
+18:33:50.919315 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 0
+18:33:50.919404 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 51
+18:33:50.919693 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045264 ecr 262591515], length 498
+18:33:50.940048 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [.], ack 518, win 75, options [nop,nop,TS val 262591521 ecr 8045264,nop,nop,sack 1 {569:1067}], length 0
+18:33:50.940063 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [.], ack 1067, win 75, options [nop,nop,TS val 262591521 ecr 8045264], length 0
+18:33:50.940070 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262591521 ecr 8045264], length 0
+18:33:50.940809 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [P.], seq 138:169, ack 1067, win 75, options [nop,nop,TS val 262591521 ecr 8045264], length 31
+18:33:50.940822 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262591521 ecr 8045264], length 31
+18:33:50.940826 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [F.], seq 169, ack 1067, win 75, options [nop,nop,TS val 262591521 ecr 8045264], length 0
+18:33:50.941045 IP 192.168.8.122.40690 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8045269 ecr 262591521], length 0
+18:33:50.941253 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8045269 ecr 262591521], length 0
+18:33:50.942407 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262591521 ecr 8045264], length 0
+18:33:50.942419 IP 192.168.8.122.40692 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8045269 ecr 262591521], length 0
+18:33:50.951302 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:50.962129 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40690: Flags [.], ack 1068, win 75, options [nop,nop,TS val 262591526 ecr 8045269], length 0
+18:33:50.966189 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40692: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262591527 ecr 8045269], length 0
+18:33:51.235210 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:33:51.383148 IP 192.168.8.122.31880 > vdnssec1.srv.prnynj.cv.net.domain: 23338+ PTR? 127.22.125.74.in-addr.arpa. (44)
+18:33:51.383157 IP 192.168.8.122.31880 > vdnssec2.srv.prnynj.cv.net.domain: 23338+ PTR? 127.22.125.74.in-addr.arpa. (44)
+18:33:51.413593 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.31880: 23338 1/0/0 PTR qh-in-f127.1e100.net. (78)
+18:33:51.413836 IP 192.168.8.122.53236 > vdnssec1.srv.prnynj.cv.net.domain: 32479+ PTR? 122.8.168.192.in-addr.arpa. (44)
+18:33:51.415827 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:51.418883 IP vdnssec2.srv.prnynj.cv.net.domain > 192.168.8.122.31880: 23338 1/0/0 PTR qh-in-f127.1e100.net. (78)
+18:33:51.418905 IP 192.168.8.122 > vdnssec2.srv.prnynj.cv.net: ICMP 192.168.8.122 udp port 31880 unreachable, length 114
+18:33:51.433750 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.53236: 32479 NXDomain 0/0/0 (44)
+18:33:51.434061 IP 192.168.8.122.60384 > vdnssec1.srv.prnynj.cv.net.domain: 3750+ PTR? 189.68.194.173.in-addr.arpa. (45)
+18:33:51.453507 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:51.464392 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.60384: 3750 NXDomain 0/1/0 (105)
+18:33:51.464569 IP 192.168.8.122.54476 > vdnssec1.srv.prnynj.cv.net.domain: 26048+ PTR? 189.201.85.209.in-addr.arpa. (45)
+18:33:51.495322 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.54476: 26048 NXDomain 0/1/0 (105)
+18:33:51.495596 IP 192.168.8.122.36139 > vdnssec1.srv.prnynj.cv.net.domain: 41920+ PTR? 189.117.236.54.in-addr.arpa. (45)
+18:33:51.514552 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.36139: 41920 1/0/0 PTR ec2-54-236-117-189.compute-1.amazonaws.com. (101)
+18:33:51.877467 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3094534126, win 29200, options [mss 1460,sackOK,TS val 8045503 ecr 0,nop,wscale 7], length 0
+18:33:51.877658 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2167361760, win 29200, options [mss 1460,sackOK,TS val 8045503 ecr 0,nop,wscale 7], length 0
+18:33:51.899233 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [S.], seq 1771649621, ack 3094534127, win 17898, options [mss 8961,sackOK,TS val 262591760 ecr 8045503,nop,wscale 8], length 0
+18:33:51.899269 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045509 ecr 262591760], length 0
+18:33:51.899418 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045509 ecr 262591760], length 517
+18:33:51.902106 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [S.], seq 1262550401, ack 2167361761, win 17898, options [mss 8961,sackOK,TS val 262591761 ecr 8045503,nop,wscale 8], length 0
+18:33:51.902127 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045509 ecr 262591761], length 0
+18:33:51.902236 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045509 ecr 262591761], length 517
+18:33:51.916106 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:51.923560 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [.], ack 518, win 75, options [nop,nop,TS val 262591766 ecr 8045509], length 0
+18:33:51.924379 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262591766 ecr 8045509], length 137
+18:33:51.924390 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045515 ecr 262591766], length 0
+18:33:51.924512 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045515 ecr 262591766], length 51
+18:33:51.924951 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045515 ecr 262591766], length 498
+18:33:51.927248 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [.], ack 518, win 75, options [nop,nop,TS val 262591767 ecr 8045509], length 0
+18:33:51.927258 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262591767 ecr 8045509], length 137
+18:33:51.927265 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045516 ecr 262591767], length 0
+18:33:51.927367 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045516 ecr 262591767], length 51
+18:33:51.927671 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045516 ecr 262591767], length 498
+18:33:51.944191 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:51.944205 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262591772 ecr 8045515], length 31
+18:33:51.944460 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8045520 ecr 262591772], length 0
+18:33:51.945915 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262591772 ecr 8045515], length 0
+18:33:51.945928 IP 192.168.8.122.40694 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8045520 ecr 262591772], length 0
+18:33:51.949149 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262591773 ecr 8045516], length 0
+18:33:51.949160 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262591773 ecr 8045516], length 31
+18:33:51.949169 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262591773 ecr 8045516], length 0
+18:33:51.949338 IP 192.168.8.122.40696 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8045521 ecr 262591773], length 0
+18:33:51.965196 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40694: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262591777 ecr 8045515], length 0
+18:33:51.974107 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40696: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262591779 ecr 8045521], length 0
+18:33:52.134609 IP 192.168.8.122.52620 > 167.206.252.114.https: Flags [.], ack 457261458, win 452, options [nop,nop,TS val 8045568 ecr 3340353319], length 0
+18:33:52.148010 IP 167.206.252.114.https > 192.168.8.122.52620: Flags [.], ack 1, win 252, options [nop,nop,TS val 3340398362 ecr 8023011], length 0
+18:33:52.382827 IP 192.168.8.122.56024 > vdnssec1.srv.prnynj.cv.net.domain: 53969+ PTR? 135.245.206.167.in-addr.arpa. (46)
+18:33:52.398370 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.56024: 53969 1/0/0 PTR vdnssec1.srv.prnynj.cv.net. (86)
+18:33:52.398621 IP 192.168.8.122.16063 > vdnssec1.srv.prnynj.cv.net.domain: 14702+ PTR? 136.245.206.167.in-addr.arpa. (46)
+18:33:52.413060 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.16063: 14702 1/0/0 PTR vdnssec2.srv.prnynj.cv.net. (86)
+18:33:52.413654 IP 192.168.8.122.25002 > vdnssec1.srv.prnynj.cv.net.domain: 13516+ PTR? 114.252.206.167.in-addr.arpa. (46)
+18:33:52.416340 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:52.427639 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.25002: 13516 NXDomain 0/1/0 (97)
+18:33:52.445320 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:52.881308 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 676391, win 29200, options [mss 1460,sackOK,TS val 8045754 ecr 0,nop,wscale 7], length 0
+18:33:52.881478 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 893374231, win 29200, options [mss 1460,sackOK,TS val 8045754 ecr 0,nop,wscale 7], length 0
+18:33:52.904618 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [S.], seq 450011666, ack 676392, win 17898, options [mss 8961,sackOK,TS val 262592012 ecr 8045754,nop,wscale 8], length 0
+18:33:52.904659 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045760 ecr 262592012], length 0
+18:33:52.904835 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045760 ecr 262592012], length 517
+18:33:52.908861 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [S.], seq 2663100616, ack 893374232, win 17898, options [mss 8961,sackOK,TS val 262592013 ecr 8045754,nop,wscale 8], length 0
+18:33:52.908882 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8045761 ecr 262592013], length 0
+18:33:52.909016 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8045761 ecr 262592013], length 517
+18:33:52.916653 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:52.931663 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592018 ecr 8045760], length 0
+18:33:52.931677 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592018 ecr 8045760], length 137
+18:33:52.931685 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045767 ecr 262592018], length 0
+18:33:52.931807 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045767 ecr 262592018], length 51
+18:33:52.932208 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045767 ecr 262592018], length 498
+18:33:52.935496 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592019 ecr 8045761], length 0
+18:33:52.936252 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592019 ecr 8045761], length 137
+18:33:52.936261 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8045768 ecr 262592019], length 0
+18:33:52.936366 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8045768 ecr 262592019], length 51
+18:33:52.936661 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8045768 ecr 262592019], length 498
+18:33:52.946601 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:52.952004 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262592024 ecr 8045767], length 31
+18:33:52.952259 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8045772 ecr 262592024], length 0
+18:33:52.953441 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262592024 ecr 8045767], length 0
+18:33:52.953455 IP 192.168.8.122.40698 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8045772 ecr 262592024], length 0
+18:33:52.956171 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262592025 ecr 8045768], length 31
+18:33:52.956188 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262592025 ecr 8045768], length 0
+18:33:52.956369 IP 192.168.8.122.40700 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8045773 ecr 262592025], length 0
+18:33:52.972087 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40698: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592029 ecr 8045767], length 0
+18:33:52.979783 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40700: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592031 ecr 8045768], length 0
+18:33:53.235166 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:33:53.417067 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:53.437928 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 42
+18:33:53.445685 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:53.463900 IP 192.168.8.122.52296 > qg-in-f189.1e100.net.https: UDP, length 38
+18:33:53.670919 IP6 fe80::d183:3b5:b240:a754.62755 > ff02::c.1900: UDP, length 150
+18:33:53.706575 IP 192.168.8.122.53432 > ams16s22-in-f227.1e100.net.https: Flags [.], ack 1737258014, win 237, options [nop,nop,TS val 8045961 ecr 3369235824], length 0
+18:33:53.807334 IP ams16s22-in-f227.1e100.net.https > 192.168.8.122.53432: Flags [.], ack 1, win 350, options [nop,nop,TS val 3369280923 ecr 8012118], length 0
+18:33:53.870023 IP 192.168.8.122.52078 > 23.97.220.207.https: Flags [P.], seq 2037784025:2037784110, ack 2821826218, win 245, options [nop,nop,TS val 8046001 ecr 121546881], length 85
+18:33:53.877872 IP 192.168.8.122.38451 > ams16s22-in-f227.1e100.net.https: UDP, length 371
+18:33:53.878506 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 4245670525, win 29200, options [mss 1460,sackOK,TS val 8046004 ecr 0,nop,wscale 7], length 0
+18:33:53.878809 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1414991203, win 29200, options [mss 1460,sackOK,TS val 8046004 ecr 0,nop,wscale 7], length 0
+18:33:53.902902 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [S.], seq 980635805, ack 4245670526, win 17898, options [mss 8961,sackOK,TS val 262592261 ecr 8046004,nop,wscale 8], length 0
+18:33:53.902940 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046010 ecr 262592261], length 0
+18:33:53.903100 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046010 ecr 262592261], length 517
+18:33:53.904599 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [S.], seq 2022824700, ack 1414991204, win 17898, options [mss 8961,sackOK,TS val 262592261 ecr 8046004,nop,wscale 8], length 0
+18:33:53.904621 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046010 ecr 262592261], length 0
+18:33:53.904750 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046010 ecr 262592261], length 517
+18:33:53.917405 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:53.928395 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592268 ecr 8046010], length 0
+18:33:53.928406 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592268 ecr 8046010], length 137
+18:33:53.928414 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 0
+18:33:53.928520 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 51
+18:33:53.928937 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 498
+18:33:53.929188 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592268 ecr 8046010], length 0
+18:33:53.929195 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592268 ecr 8046010], length 137
+18:33:53.929204 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 0
+18:33:53.929299 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 51
+18:33:53.929622 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046016 ecr 262592268], length 498
+18:33:53.946050 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:53.949233 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262592273 ecr 8046016], length 31
+18:33:53.949466 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046021 ecr 262592273], length 0
+18:33:53.950669 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262592273 ecr 8046016], length 0
+18:33:53.950680 IP 192.168.8.122.40702 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046022 ecr 262592273], length 0
+18:33:53.954635 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262592274 ecr 8046016], length 0
+18:33:53.954649 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262592275 ecr 8046016], length 31
+18:33:53.954821 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046023 ecr 262592275], length 0
+18:33:53.956031 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262592275 ecr 8046016], length 0
+18:33:53.956042 IP 192.168.8.122.40704 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046023 ecr 262592275], length 0
+18:33:53.966247 IP 23.97.220.207.https > 192.168.8.122.52078: Flags [P.], seq 1:70, ack 85, win 511, options [nop,nop,TS val 121547866 ecr 8046001], length 69
+18:33:53.966258 IP 192.168.8.122.52078 > 23.97.220.207.https: Flags [.], ack 70, win 245, options [nop,nop,TS val 8046025 ecr 121547866], length 0
+18:33:53.969793 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40702: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592278 ecr 8046016], length 0
+18:33:53.975251 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40704: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592280 ecr 8046023], length 0
+18:33:53.983017 IP ams16s22-in-f227.1e100.net.https > 192.168.8.122.38451: UDP, length 84
+18:33:54.008974 IP 192.168.8.122.38451 > ams16s22-in-f227.1e100.net.https: UDP, length 37
+18:33:54.382862 IP 192.168.8.122.61797 > vdnssec1.srv.prnynj.cv.net.domain: 7505+ PTR? 189.29.125.74.in-addr.arpa. (44)
+18:33:54.397703 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.61797: 7505 1/0/0 PTR qg-in-f189.1e100.net. (78)
+18:33:54.398004 IP 192.168.8.122.23259 > vdnssec1.srv.prnynj.cv.net.domain: 34771+ PTR? c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+18:33:54.417735 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:54.421334 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.23259: 34771 NXDomain 0/1/0 (160)
+18:33:54.421644 IP 192.168.8.122.4093 > vdnssec1.srv.prnynj.cv.net.domain: 37563+ PTR? 4.5.7.a.0.4.2.b.5.b.3.0.3.8.1.d.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+18:33:54.444555 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.4093: 37563 NXDomain 0/1/0 (160)
+18:33:54.444822 IP 192.168.8.122.2075 > vdnssec1.srv.prnynj.cv.net.domain: 38995+ PTR? 227.212.58.216.in-addr.arpa. (45)
+18:33:54.447196 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:54.453906 IP 192.168.8.122.mdns > 224.0.0.251.mdns: 0 [2q] A (QM)? dp-450500VK.local. SRV (QM)? dp-450500VK._sftp-ssh._tcp.local. (68)
+18:33:54.482306 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.2075: 38995 2/0/0 PTR ams16s22-in-f227.1e100.net., PTR ams16s22-in-f3.1e100.net. (114)
+18:33:54.482629 IP 192.168.8.122.40120 > vdnssec1.srv.prnynj.cv.net.domain: 30547+ PTR? 207.220.97.23.in-addr.arpa. (44)
+18:33:54.539185 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.40120: 30547 NXDomain 0/0/0 (44)
+18:33:54.744065 IP 192.168.8.103.mdns > 224.0.0.251.mdns: 0*- [0q] 2/0/0 (Cache flush) SRV dp-450500VK.local.:22 0 0, (Cache flush) A 192.168.8.103 (92)
+18:33:54.872464 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 574213772, win 29200, options [mss 1460,sackOK,TS val 8046252 ecr 0,nop,wscale 7], length 0
+18:33:54.872826 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2612218146, win 29200, options [mss 1460,sackOK,TS val 8046252 ecr 0,nop,wscale 7], length 0
+18:33:54.894793 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [S.], seq 2173426188, ack 574213773, win 17898, options [mss 8961,sackOK,TS val 262592509 ecr 8046252,nop,wscale 8], length 0
+18:33:54.894826 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046258 ecr 262592509], length 0
+18:33:54.894980 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046258 ecr 262592509], length 517
+18:33:54.898635 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [S.], seq 1031804223, ack 2612218147, win 17898, options [mss 8961,sackOK,TS val 262592510 ecr 8046252,nop,wscale 8], length 0
+18:33:54.898651 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046259 ecr 262592510], length 0
+18:33:54.898758 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046259 ecr 262592510], length 517
+18:33:54.918049 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:54.921312 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592516 ecr 8046258], length 0
+18:33:54.921320 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592516 ecr 8046258], length 137
+18:33:54.921326 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046264 ecr 262592516], length 0
+18:33:54.921423 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046264 ecr 262592516], length 51
+18:33:54.921795 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046264 ecr 262592516], length 498
+18:33:54.925229 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592517 ecr 8046259], length 0
+18:33:54.925957 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592517 ecr 8046259], length 137
+18:33:54.925964 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046265 ecr 262592517], length 0
+18:33:54.926038 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046265 ecr 262592517], length 51
+18:33:54.926289 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046265 ecr 262592517], length 498
+18:33:54.943663 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262592522 ecr 8046264], length 0
+18:33:54.943677 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262592522 ecr 8046264], length 31
+18:33:54.943907 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046270 ecr 262592522], length 0
+18:33:54.945117 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262592522 ecr 8046264], length 0
+18:33:54.945128 IP 192.168.8.122.40706 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046270 ecr 262592522], length 0
+18:33:54.946570 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:54.947932 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262592523 ecr 8046265], length 0
+18:33:54.947943 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262592523 ecr 8046265], length 31
+18:33:54.947952 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262592523 ecr 8046265], length 0
+18:33:54.948121 IP 192.168.8.122.40708 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8046271 ecr 262592523], length 0
+18:33:54.965614 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40706: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592527 ecr 8046270], length 0
+18:33:54.968480 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40708: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592528 ecr 8046271], length 0
+18:33:55.090629 IP 192.168.8.122.60422 > 155.56.220.133.https: Flags [.], ack 3502633144, win 64975, options [nop,nop,TS val 8046307 ecr 322942106], length 0
+18:33:55.108284 IP6 fe80::d183:3b5:b240:a754.dhcpv6-client > ff02::1:2.dhcpv6-server: dhcp6 solicit
+18:33:55.194274 IP 155.56.220.133.https > 192.168.8.122.60422: Flags [.], ack 1, win 65535, options [nop,nop,TS val 322987205 ecr 8001201], length 0
+18:33:55.235196 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:33:55.382916 IP 192.168.8.122.52715 > vdnssec1.srv.prnynj.cv.net.domain: 9158+ PTR? 251.0.0.224.in-addr.arpa. (42)
+18:33:55.397514 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.52715: 9158 NXDomain 0/1/0 (99)
+18:33:55.397808 IP 192.168.8.122.50362 > vdnssec1.srv.prnynj.cv.net.domain: 20593+ PTR? 103.8.168.192.in-addr.arpa. (44)
+18:33:55.411935 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.50362: 20593 NXDomain 0/0/0 (44)
+18:33:55.412357 IP 192.168.8.122.25043 > vdnssec1.srv.prnynj.cv.net.domain: 47752+ PTR? 133.220.56.155.in-addr.arpa. (45)
+18:33:55.418406 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:55.448579 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:55.562778 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.25043: 47752 NXDomain 0/1/0 (97)
+18:33:55.563206 IP 192.168.8.122.52824 > vdnssec1.srv.prnynj.cv.net.domain: 18462+ PTR? 2.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+18:33:55.578117 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.52824: 18462 NXDomain 0/1/0 (160)
+18:33:55.879886 IP 192.168.8.122.38451 > ams16s22-in-f227.1e100.net.https: UDP, length 398
+18:33:55.880230 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2649208164, win 29200, options [mss 1460,sackOK,TS val 8046504 ecr 0,nop,wscale 7], length 0
+18:33:55.880381 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3464082415, win 29200, options [mss 1460,sackOK,TS val 8046504 ecr 0,nop,wscale 7], length 0
+18:33:55.911686 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [S.], seq 2565769694, ack 2649208165, win 17898, options [mss 8961,sackOK,TS val 262592764 ecr 8046504,nop,wscale 8], length 0
+18:33:55.911721 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046512 ecr 262592764], length 0
+18:33:55.911728 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [S.], seq 3487232420, ack 3464082416, win 17898, options [mss 8961,sackOK,TS val 262592764 ecr 8046504,nop,wscale 8], length 0
+18:33:55.911738 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046512 ecr 262592764], length 0
+18:33:55.911944 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046512 ecr 262592764], length 517
+18:33:55.912008 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046512 ecr 262592764], length 517
+18:33:55.918748 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:55.936949 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592770 ecr 8046512], length 0
+18:33:55.937718 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592770 ecr 8046512], length 137
+18:33:55.937730 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 0
+18:33:55.937739 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592770 ecr 8046512], length 0
+18:33:55.937747 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262592770 ecr 8046512], length 137
+18:33:55.937752 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 0
+18:33:55.937865 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 51
+18:33:55.938127 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 51
+18:33:55.938310 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 498
+18:33:55.938381 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046518 ecr 262592770], length 498
+18:33:55.947084 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:55.957786 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262592775 ecr 8046518], length 31
+18:33:55.958010 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046523 ecr 262592775], length 0
+18:33:55.959381 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262592775 ecr 8046518], length 0
+18:33:55.959395 IP 192.168.8.122.40710 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046524 ecr 262592775], length 0
+18:33:55.961480 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [.], ack 518, win 75, options [nop,nop,TS val 262592776 ecr 8046518,nop,nop,sack 1 {569:1067}], length 0
+18:33:55.961492 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [.], ack 1067, win 75, options [nop,nop,TS val 262592776 ecr 8046518], length 0
+18:33:55.962615 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [P.], seq 138:169, ack 1067, win 75, options [nop,nop,TS val 262592776 ecr 8046518], length 31
+18:33:55.962625 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [F.], seq 169, ack 1067, win 75, options [nop,nop,TS val 262592776 ecr 8046518], length 0
+18:33:55.962796 IP 192.168.8.122.40712 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8046525 ecr 262592776], length 0
+18:33:55.979731 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40710: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262592781 ecr 8046518], length 0
+18:33:55.986336 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40712: Flags [.], ack 1068, win 75, options [nop,nop,TS val 262592782 ecr 8046525], length 0
+18:33:55.987880 IP ams16s22-in-f227.1e100.net.https > 192.168.8.122.38451: UDP, length 84
+18:33:56.013687 IP 192.168.8.122.38451 > ams16s22-in-f227.1e100.net.https: UDP, length 37
+18:33:56.129283 IP xx-fbcdn-shv-01-ord1.fbcdn.net.https > 192.168.8.122.39288: Flags [P.], seq 3247570810:3247570856, ack 2916777623, win 68, options [nop,nop,TS val 1726620083 ecr 8030345], length 46
+18:33:56.129304 IP 192.168.8.122.39288 > xx-fbcdn-shv-01-ord1.fbcdn.net.https: Flags [.], ack 46, win 1444, options [nop,nop,TS val 8046566 ecr 1726620083], length 0
+18:33:56.129432 IP 192.168.8.122.39288 > xx-fbcdn-shv-01-ord1.fbcdn.net.https: Flags [F.], seq 1, ack 46, win 1444, options [nop,nop,TS val 8046566 ecr 1726620083], length 0
+18:33:56.130101 IP xx-fbcdn-shv-01-ord1.fbcdn.net.https > 192.168.8.122.39288: Flags [P.], seq 46:77, ack 1, win 68, options [nop,nop,TS val 1726620083 ecr 8030345], length 31
+18:33:56.130123 IP 192.168.8.122.39288 > xx-fbcdn-shv-01-ord1.fbcdn.net.https: Flags [R], seq 2916777623, win 0, length 0
+18:33:56.131611 IP xx-fbcdn-shv-01-ord1.fbcdn.net.https > 192.168.8.122.39288: Flags [F.], seq 77, ack 1, win 68, options [nop,nop,TS val 1726620083 ecr 8030345], length 0
+18:33:56.131622 IP 192.168.8.122.39288 > xx-fbcdn-shv-01-ord1.fbcdn.net.https: Flags [R], seq 2916777623, win 0, length 0
+18:33:56.170636 IP xx-fbcdn-shv-01-ord1.fbcdn.net.https > 192.168.8.122.39288: Flags [.], ack 2, win 68, options [nop,nop,TS val 1726620124 ecr 8046566], length 0
+18:33:56.170649 IP 192.168.8.122.39288 > xx-fbcdn-shv-01-ord1.fbcdn.net.https: Flags [R], seq 2916777624, win 0, length 0
+18:33:56.354032 IP edge-star-mini-shv-01-ord1.facebook.com.https > 192.168.8.122.44528: Flags [P.], seq 3428047193:3428047239, ack 3506167524, win 108, options [nop,nop,TS val 1795498044 ecr 8030416], length 46
+18:33:56.354052 IP 192.168.8.122.44528 > edge-star-mini-shv-01-ord1.facebook.com.https: Flags [.], ack 46, win 736, options [nop,nop,TS val 8046622 ecr 1795498044], length 0
+18:33:56.354173 IP 192.168.8.122.44528 > edge-star-mini-shv-01-ord1.facebook.com.https: Flags [F.], seq 1, ack 46, win 736, options [nop,nop,TS val 8046622 ecr 1795498044], length 0
+18:33:56.354885 IP edge-star-mini-shv-01-ord1.facebook.com.https > 192.168.8.122.44528: Flags [P.], seq 46:77, ack 1, win 108, options [nop,nop,TS val 1795498044 ecr 8030416], length 31
+18:33:56.354905 IP 192.168.8.122.44528 > edge-star-mini-shv-01-ord1.facebook.com.https: Flags [R], seq 3506167524, win 0, length 0
+18:33:56.356384 IP edge-star-mini-shv-01-ord1.facebook.com.https > 192.168.8.122.44528: Flags [F.], seq 77, ack 1, win 108, options [nop,nop,TS val 1795498044 ecr 8030416], length 0
+18:33:56.356396 IP 192.168.8.122.44528 > edge-star-mini-shv-01-ord1.facebook.com.https: Flags [R], seq 3506167524, win 0, length 0
+18:33:56.383128 IP 192.168.8.122.62070 > vdnssec1.srv.prnynj.cv.net.domain: 4507+ PTR? 7.74.13.31.in-addr.arpa. (41)
+18:33:56.394394 IP edge-star-mini-shv-01-ord1.facebook.com.https > 192.168.8.122.44528: Flags [.], ack 2, win 108, options [nop,nop,TS val 1795498083 ecr 8046622], length 0
+18:33:56.394406 IP 192.168.8.122.44528 > edge-star-mini-shv-01-ord1.facebook.com.https: Flags [R], seq 3506167525, win 0, length 0
+18:33:56.397985 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.62070: 4507 1/0/0 PTR xx-fbcdn-shv-01-ord1.fbcdn.net. (85)
+18:33:56.398307 IP 192.168.8.122.39322 > vdnssec1.srv.prnynj.cv.net.domain: 10943+ PTR? 36.74.13.31.in-addr.arpa. (42)
+18:33:56.412083 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.39322: 10943 1/0/0 PTR edge-star-mini-shv-01-ord1.facebook.com. (95)
+18:33:56.419136 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:56.448779 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:56.560143 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 1956686731:1956686915, ack 2418260366, win 1444, options [nop,nop,TS val 8046674 ecr 3417367271], length 184
+18:33:56.560450 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 184:420, ack 1, win 1444, options [nop,nop,TS val 8046674 ecr 3417367271], length 236
+18:33:56.571993 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 184, win 1672, options [nop,nop,TS val 3417377241 ecr 8046674], length 0
+18:33:56.576746 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 420, win 1672, options [nop,nop,TS val 3417377246 ecr 8046674], length 0
+18:33:56.578621 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [P.], seq 1:39, ack 420, win 1672, options [nop,nop,TS val 3417377249 ecr 8046674], length 38
+18:33:56.618576 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [.], ack 39, win 1444, options [nop,nop,TS val 8046689 ecr 3417377249], length 0
+18:33:56.629374 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [P.], seq 39:154, ack 420, win 1672, options [nop,nop,TS val 3417377300 ecr 8046674], length 115
+18:33:56.629385 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [.], ack 154, win 1444, options [nop,nop,TS val 8046691 ecr 3417377300], length 0
+18:33:56.630101 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [P.], seq 154:1077, ack 420, win 1672, options [nop,nop,TS val 3417377300 ecr 8046674], length 923
+18:33:56.630110 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [.], ack 1077, win 1444, options [nop,nop,TS val 8046691 ecr 3417377300], length 0
+18:33:56.630596 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 420:458, ack 1077, win 1444, options [nop,nop,TS val 8046692 ecr 3417377300], length 38
+18:33:56.671424 IP6 fe80::d183:3b5:b240:a754.62755 > ff02::c.1900: UDP, length 150
+18:33:56.685565 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 458, win 1672, options [nop,nop,TS val 3417377355 ecr 8046692], length 0
+18:33:56.876553 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 845619918, win 29200, options [mss 1460,sackOK,TS val 8046753 ecr 0,nop,wscale 7], length 0
+18:33:56.877024 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1214333443, win 29200, options [mss 1460,sackOK,TS val 8046753 ecr 0,nop,wscale 7], length 0
+18:33:56.878100 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3517768094, win 29200, options [mss 1460,sackOK,TS val 8046753 ecr 0,nop,wscale 7], length 0
+18:33:56.899176 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [S.], seq 1268755602, ack 1214333444, win 17898, options [mss 8961,sackOK,TS val 262593010 ecr 8046753,nop,wscale 8], length 0
+18:33:56.899208 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593010], length 0
+18:33:56.899214 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [S.], seq 3462547894, ack 845619919, win 17898, options [mss 8961,sackOK,TS val 262593010 ecr 8046753,nop,wscale 8], length 0
+18:33:56.899222 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593010], length 0
+18:33:56.899374 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593010], length 517
+18:33:56.899438 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593010], length 517
+18:33:56.902146 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [S.], seq 779546550, ack 3517768095, win 17898, options [mss 8961,sackOK,TS val 262593011 ecr 8046753,nop,wscale 8], length 0
+18:33:56.902165 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593011], length 0
+18:33:56.902289 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046759 ecr 262593011], length 517
+18:33:56.919437 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:56.926836 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 0
+18:33:56.926847 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 137
+18:33:56.926855 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 0
+18:33:56.926964 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 51
+18:33:56.927409 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 1448
+18:33:56.927412 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 443
+18:33:56.927609 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 0
+18:33:56.927619 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 137
+18:33:56.927625 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 0
+18:33:56.927634 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 0
+18:33:56.927728 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 51
+18:33:56.928074 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 1448
+18:33:56.928077 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 443
+18:33:56.928815 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593017 ecr 8046759], length 137
+18:33:56.928827 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 0
+18:33:56.928934 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 51
+18:33:56.929330 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 1448
+18:33:56.929332 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046766 ecr 262593017], length 443
+18:33:56.947366 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:56.947377 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262593023 ecr 8046766], length 31
+18:33:56.947610 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 169, win 237, options [nop,nop,TS val 8046771 ecr 262593023], length 0
+18:33:56.948844 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262593023 ecr 8046766], length 0
+18:33:56.948856 IP 192.168.8.122.40716 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046771 ecr 262593023], length 0
+18:33:56.954651 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [.], ack 2460, win 136, options [nop,nop,TS val 262593024 ecr 8046766], length 0
+18:33:56.954659 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593024 ecr 8046766,nop,nop,sack 1 {569:2017}], length 0
+18:33:56.954669 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593024 ecr 8046766,nop,nop,sack 1 {569:2460}], length 0
+18:33:56.954672 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [.], ack 2460, win 75, options [nop,nop,TS val 262593024 ecr 8046766], length 0
+18:33:56.954676 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [.], ack 2460, win 136, options [nop,nop,TS val 262593025 ecr 8046766], length 0
+18:33:56.955286 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [P.], seq 138:169, ack 2460, win 136, options [nop,nop,TS val 262593025 ecr 8046766], length 31
+18:33:56.955294 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [P.], seq 138:169, ack 2460, win 75, options [nop,nop,TS val 262593025 ecr 8046766], length 31
+18:33:56.955297 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [F.], seq 169, ack 2460, win 136, options [nop,nop,TS val 262593025 ecr 8046766], length 0
+18:33:56.955459 IP 192.168.8.122.40718 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 170, win 237, options [nop,nop,TS val 8046773 ecr 262593025], length 0
+18:33:56.955648 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 169, win 237, options [nop,nop,TS val 8046773 ecr 262593025], length 0
+18:33:56.956143 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3736319201, win 29200, options [mss 1460,sackOK,TS val 8046773 ecr 0,nop,wscale 7], length 0
+18:33:56.956465 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3020432873, win 29200, options [mss 1460,sackOK,TS val 8046773 ecr 0,nop,wscale 7], length 0
+18:33:56.956669 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1124588220, win 29200, options [mss 1460,sackOK,TS val 8046773 ecr 0,nop,wscale 7], length 0
+18:33:56.956834 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1461704713, win 29200, options [mss 1460,sackOK,TS val 8046773 ecr 0,nop,wscale 7], length 0
+18:33:56.956966 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [F.], seq 169, ack 2460, win 75, options [nop,nop,TS val 262593025 ecr 8046766], length 0
+18:33:56.956975 IP 192.168.8.122.40714 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046773 ecr 262593025], length 0
+18:33:56.957019 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2811401579, win 29200, options [mss 1460,sackOK,TS val 8046773 ecr 0,nop,wscale 7], length 0
+18:33:56.968783 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40716: Flags [.], ack 2461, win 136, options [nop,nop,TS val 262593028 ecr 8046771], length 0
+18:33:56.976763 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40718: Flags [.], ack 2461, win 136, options [nop,nop,TS val 262593030 ecr 8046773], length 0
+18:33:56.980208 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40714: Flags [.], ack 2461, win 75, options [nop,nop,TS val 262593031 ecr 8046773], length 0
+18:33:56.980223 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [S.], seq 3424119438, ack 1124588221, win 17898, options [mss 8961,sackOK,TS val 262593031 ecr 8046773,nop,wscale 8], length 0
+18:33:56.980241 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046779 ecr 262593031], length 0
+18:33:56.980373 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046779 ecr 262593031], length 517
+18:33:56.981997 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [S.], seq 143319863, ack 2811401580, win 17898, options [mss 8961,sackOK,TS val 262593031 ecr 8046773,nop,wscale 8], length 0
+18:33:56.982018 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046779 ecr 262593031], length 0
+18:33:56.982139 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046779 ecr 262593031], length 517
+18:33:56.982966 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [S.], seq 4239059156, ack 3020432874, win 17898, options [mss 8961,sackOK,TS val 262593031 ecr 8046773,nop,wscale 8], length 0
+18:33:56.982987 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 0
+18:33:56.982993 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [S.], seq 2718184994, ack 3736319202, win 17898, options [mss 8961,sackOK,TS val 262593031 ecr 8046773,nop,wscale 8], length 0
+18:33:56.983004 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 0
+18:33:56.983008 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [S.], seq 3736818744, ack 1461704714, win 17898, options [mss 8961,sackOK,TS val 262593031 ecr 8046773,nop,wscale 8], length 0
+18:33:56.983016 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 0
+18:33:56.983157 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 517
+18:33:56.983258 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 517
+18:33:56.983345 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046780 ecr 262593031], length 517
+18:33:56.996181 IP a-0010.a-msedge.net.https > 192.168.8.122.60662: Flags [P.], seq 815514371:815514440, ack 2928041290, win 514, options [nop,nop,TS val 102338211 ecr 8036780], length 69
+18:33:56.997014 IP a-0010.a-msedge.net.https > 192.168.8.122.60662: Flags [P.], seq 69:186, ack 1, win 514, options [nop,nop,TS val 102338211 ecr 8036780], length 117
+18:33:56.997046 IP 192.168.8.122.60662 > a-0010.a-msedge.net.https: Flags [.], ack 186, win 1444, options [nop,nop,TS val 8046783 ecr 102338211], length 0
+18:33:57.007313 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046779], length 0
+18:33:57.007323 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046779], length 0
+18:33:57.007327 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046779], length 137
+18:33:57.007334 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 0
+18:33:57.007342 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046779], length 137
+18:33:57.007348 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 0
+18:33:57.007351 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046780], length 0
+18:33:57.007356 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046780], length 137
+18:33:57.007360 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 0
+18:33:57.007455 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 51
+18:33:57.007799 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 51
+18:33:57.007984 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046780], length 0
+18:33:57.007992 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593037 ecr 8046780], length 137
+18:33:57.007997 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 0
+18:33:57.008106 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 51
+18:33:57.008414 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 51
+18:33:57.008741 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 1448
+18:33:57.008744 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 443
+18:33:57.008824 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 498
+18:33:57.008937 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 1448
+18:33:57.008939 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 443
+18:33:57.009048 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 1448
+18:33:57.009050 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046786 ecr 262593037], length 443
+18:33:57.011273 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593038 ecr 8046780], length 0
+18:33:57.011850 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593038 ecr 8046780], length 137
+18:33:57.011860 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046787 ecr 262593038], length 0
+18:33:57.011965 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046787 ecr 262593038], length 51
+18:33:57.012323 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], seq 569:2017, ack 138, win 237, options [nop,nop,TS val 8046787 ecr 262593038], length 1448
+18:33:57.012325 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 2017:2460, ack 138, win 237, options [nop,nop,TS val 8046787 ecr 262593038], length 443
+18:33:57.027543 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262593043 ecr 8046786], length 31
+18:33:57.027754 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 169, win 237, options [nop,nop,TS val 8046791 ecr 262593043], length 0
+18:33:57.028373 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1175243859, win 29200, options [mss 1460,sackOK,TS val 8046791 ecr 0,nop,wscale 7], length 0
+18:33:57.028959 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262593043 ecr 8046786], length 0
+18:33:57.028972 IP 192.168.8.122.40728 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046791 ecr 262593043], length 0
+18:33:57.034221 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593044 ecr 8046786], length 0
+18:33:57.034232 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [.], ack 2460, win 97, options [nop,nop,TS val 262593044 ecr 8046786], length 0
+18:33:57.034237 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593045 ecr 8046786], length 31
+18:33:57.034397 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046792 ecr 262593045], length 0
+18:33:57.034967 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262593045 ecr 8046786], length 31
+18:33:57.034983 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593045 ecr 8046786], length 0
+18:33:57.034992 IP 192.168.8.122.40724 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046793 ecr 262593045], length 0
+18:33:57.035160 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 169, win 237, options [nop,nop,TS val 8046793 ecr 262593045], length 0
+18:33:57.035715 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [.], ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046786], length 0
+18:33:57.035726 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [.], ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046786], length 0
+18:33:57.035732 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [P.], seq 138:169, ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046786], length 31
+18:33:57.035739 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262593045 ecr 8046786], length 0
+18:33:57.035746 IP 192.168.8.122.40720 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046793 ecr 262593045], length 0
+18:33:57.035904 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 169, win 237, options [nop,nop,TS val 8046793 ecr 262593045], length 0
+18:33:57.037175 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [F.], seq 169, ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046786], length 0
+18:33:57.037185 IP 192.168.8.122.40722 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046793 ecr 262593045], length 0
+18:33:57.037190 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [.], ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046787], length 0
+18:33:57.042333 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [P.], seq 138:169, ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046787], length 31
+18:33:57.042346 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [F.], seq 169, ack 2460, win 136, options [nop,nop,TS val 262593045 ecr 8046787], length 0
+18:33:57.042519 IP 192.168.8.122.40726 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 2460, ack 170, win 237, options [nop,nop,TS val 8046794 ecr 262593045], length 0
+18:33:57.054671 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40728: Flags [.], ack 2461, win 97, options [nop,nop,TS val 262593049 ecr 8046791], length 0
+18:33:57.058475 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40724: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593050 ecr 8046786], length 0
+18:33:57.058497 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40720: Flags [.], ack 2461, win 136, options [nop,nop,TS val 262593051 ecr 8046793], length 0
+18:33:57.059955 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [S.], seq 3217259285, ack 1175243860, win 17898, options [mss 8961,sackOK,TS val 262593051 ecr 8046791,nop,wscale 8], length 0
+18:33:57.059977 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8046799 ecr 262593051], length 0
+18:33:57.060110 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8046799 ecr 262593051], length 517
+18:33:57.063464 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40722: Flags [.], ack 2461, win 136, options [nop,nop,TS val 262593052 ecr 8046786], length 0
+18:33:57.068414 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40726: Flags [.], ack 2461, win 136, options [nop,nop,TS val 262593053 ecr 8046794], length 0
+18:33:57.091353 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593058 ecr 8046799], length 0
+18:33:57.091362 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593058 ecr 8046799], length 137
+18:33:57.091369 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8046807 ecr 262593058], length 0
+18:33:57.091467 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8046807 ecr 262593058], length 51
+18:33:57.091803 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8046807 ecr 262593058], length 498
+18:33:57.111753 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593064 ecr 8046807], length 0
+18:33:57.111765 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593064 ecr 8046807], length 31
+18:33:57.111938 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8046812 ecr 262593064], length 0
+18:33:57.113195 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593064 ecr 8046807], length 0
+18:33:57.113206 IP 192.168.8.122.40730 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8046812 ecr 262593064], length 0
+18:33:57.132604 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40730: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593069 ecr 8046812], length 0
+18:33:57.235200 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:33:57.382950 IP 192.168.8.122.40565 > vdnssec1.srv.prnynj.cv.net.domain: 41878+ PTR? 94.252.206.167.in-addr.arpa. (45)
+18:33:57.397148 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.40565: 41878 NXDomain 0/1/0 (96)
+18:33:57.397839 IP 192.168.8.122.15996 > vdnssec1.srv.prnynj.cv.net.domain: 39175+ PTR? 212.197.79.204.in-addr.arpa. (45)
+18:33:57.419761 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:57.422136 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.15996: 39175 1/0/0 PTR a-0010.a-msedge.net. (78)
+18:33:57.455151 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:57.872648 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2462449425, win 29200, options [mss 1460,sackOK,TS val 8047002 ecr 0,nop,wscale 7], length 0
+18:33:57.872842 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 602939261, win 29200, options [mss 1460,sackOK,TS val 8047002 ecr 0,nop,wscale 7], length 0
+18:33:57.894907 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [S.], seq 630469265, ack 2462449426, win 17898, options [mss 8961,sackOK,TS val 262593259 ecr 8047002,nop,wscale 8], length 0
+18:33:57.894942 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047008 ecr 262593259], length 0
+18:33:57.895119 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047008 ecr 262593259], length 517
+18:33:57.898523 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [S.], seq 871259031, ack 602939262, win 17898, options [mss 8961,sackOK,TS val 262593260 ecr 8047002,nop,wscale 8], length 0
+18:33:57.898547 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047009 ecr 262593260], length 0
+18:33:57.898704 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047009 ecr 262593260], length 517
+18:33:57.920138 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:57.921917 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593266 ecr 8047008], length 0
+18:33:57.921929 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593266 ecr 8047008], length 137
+18:33:57.921936 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047014 ecr 262593266], length 0
+18:33:57.922050 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047014 ecr 262593266], length 51
+18:33:57.922514 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047015 ecr 262593266], length 498
+18:33:57.926221 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593267 ecr 8047009], length 0
+18:33:57.926989 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593267 ecr 8047009], length 137
+18:33:57.926999 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047016 ecr 262593267], length 0
+18:33:57.927115 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047016 ecr 262593267], length 51
+18:33:57.927420 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047016 ecr 262593267], length 498
+18:33:57.945599 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593272 ecr 8047014], length 0
+18:33:57.945613 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593272 ecr 8047014], length 31
+18:33:57.945842 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047020 ecr 262593272], length 0
+18:33:57.947069 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593272 ecr 8047014], length 0
+18:33:57.947080 IP 192.168.8.122.40732 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047021 ecr 262593272], length 0
+18:33:57.948990 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:57.949005 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593273 ecr 8047016], length 0
+18:33:57.949014 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593273 ecr 8047016], length 31
+18:33:57.949220 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047021 ecr 262593273], length 0
+18:33:57.950423 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593273 ecr 8047016], length 0
+18:33:57.950433 IP 192.168.8.122.40734 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047021 ecr 262593273], length 0
+18:33:57.966771 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40732: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593277 ecr 8047014], length 0
+18:33:57.969669 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40734: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593278 ecr 8047021], length 0
+18:33:58.150526 IP 192.168.8.122.50462 > 108-174-10-10.fwd.linkedin.com.https: Flags [.], ack 1024515364, win 320, options [nop,nop,TS val 8047072 ecr 4170672613], length 0
+18:33:58.171764 IP 108-174-10-10.fwd.linkedin.com.https > 192.168.8.122.50462: Flags [.], ack 1, win 16, options [nop,nop,TS val 4170717733 ecr 8024533], length 0
+18:33:58.383096 IP 192.168.8.122.46775 > vdnssec1.srv.prnynj.cv.net.domain: 56312+ PTR? 10.10.174.108.in-addr.arpa. (44)
+18:33:58.396794 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.46775: 56312 1/0/0 PTR 108-174-10-10.fwd.linkedin.com. (88)
+18:33:58.420486 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:58.449275 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:58.745793 IP 173.194.68.189.https > 192.168.8.122.46805: UDP, length 445
+18:33:58.768513 IP 209.85.201.189.https > 192.168.8.122.52521: UDP, length 447
+18:33:58.771412 IP 192.168.8.122.46805 > 173.194.68.189.https: UDP, length 38
+18:33:58.794642 IP 192.168.8.122.52521 > 209.85.201.189.https: UDP, length 38
+18:33:58.874597 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1674729245, win 29200, options [mss 1460,sackOK,TS val 8047253 ecr 0,nop,wscale 7], length 0
+18:33:58.874771 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3083300045, win 29200, options [mss 1460,sackOK,TS val 8047253 ecr 0,nop,wscale 7], length 0
+18:33:58.882172 IP 192.168.8.122.37580 > 167.206.145.25.https: Flags [P.], seq 1569863941:1569864808, ack 2342364810, win 1444, options [nop,nop,TS val 8047254 ecr 3334041785], length 867
+18:33:58.882428 IP 192.168.8.122.37580 > 167.206.145.25.https: Flags [P.], seq 867:905, ack 1, win 1444, options [nop,nop,TS val 8047254 ecr 3334041785], length 38
+18:33:58.897076 IP 167.206.145.25.https > 192.168.8.122.37580: Flags [.], ack 867, win 1672, options [nop,nop,TS val 3334054163 ecr 8047254], length 0
+18:33:58.897094 IP 167.206.145.25.https > 192.168.8.122.37580: Flags [.], ack 905, win 1672, options [nop,nop,TS val 3334054163 ecr 8047254], length 0
+18:33:58.898535 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [S.], seq 2659082853, ack 1674729246, win 17898, options [mss 8961,sackOK,TS val 262593510 ecr 8047253,nop,wscale 8], length 0
+18:33:58.898564 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047259 ecr 262593510], length 0
+18:33:58.898721 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047259 ecr 262593510], length 517
+18:33:58.901037 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [S.], seq 1736912403, ack 3083300046, win 17898, options [mss 8961,sackOK,TS val 262593511 ecr 8047253,nop,wscale 8], length 0
+18:33:58.901056 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047259 ecr 262593511], length 0
+18:33:58.901061 IP 167.206.145.25.https > 192.168.8.122.37580: Flags [P.], seq 1:39, ack 905, win 1672, options [nop,nop,TS val 3334054167 ecr 8047254], length 38
+18:33:58.901215 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047259 ecr 262593511], length 517
+18:33:58.917736 IP 167.206.145.25.https > 192.168.8.122.37580: Flags [P.], seq 39:195, ack 905, win 1672, options [nop,nop,TS val 3334054185 ecr 8047254], length 156
+18:33:58.917765 IP 192.168.8.122.37580 > 167.206.145.25.https: Flags [.], ack 195, win 1444, options [nop,nop,TS val 8047263 ecr 3334054167], length 0
+18:33:58.918553 IP 192.168.8.122.37580 > 167.206.145.25.https: Flags [P.], seq 905:943, ack 195, win 1444, options [nop,nop,TS val 8047264 ecr 3334054167], length 38
+18:33:58.919752 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 458:1362, ack 1077, win 1444, options [nop,nop,TS val 8047264 ecr 3417377355], length 904
+18:33:58.920055 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 1362:1508, ack 1077, win 1444, options [nop,nop,TS val 8047264 ecr 3417377355], length 146
+18:33:58.920922 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:58.923816 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593516 ecr 8047259], length 0
+18:33:58.923823 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593516 ecr 8047259], length 137
+18:33:58.923828 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593516], length 0
+18:33:58.923898 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593516], length 51
+18:33:58.924223 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593516], length 498
+18:33:58.924497 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593517 ecr 8047259], length 0
+18:33:58.924505 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593517 ecr 8047259], length 137
+18:33:58.924512 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593517], length 0
+18:33:58.924617 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593517], length 51
+18:33:58.924890 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047265 ecr 262593517], length 498
+18:33:58.935917 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 1362, win 1672, options [nop,nop,TS val 3417379605 ecr 8047264], length 0
+18:33:58.935928 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 1508, win 1672, options [nop,nop,TS val 3417379605 ecr 8047264], length 0
+18:33:58.946969 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593523 ecr 8047265,nop,nop,sack 1 {569:1067}], length 0
+18:33:58.946984 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [.], ack 1067, win 75, options [nop,nop,TS val 262593523 ecr 8047265], length 0
+18:33:58.946988 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593523 ecr 8047265], length 0
+18:33:58.947759 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [P.], seq 138:169, ack 1067, win 75, options [nop,nop,TS val 262593523 ecr 8047265], length 31
+18:33:58.947770 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593523 ecr 8047265], length 31
+18:33:58.947774 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [F.], seq 169, ack 1067, win 75, options [nop,nop,TS val 262593523 ecr 8047265], length 0
+18:33:58.947980 IP 192.168.8.122.40738 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8047271 ecr 262593523], length 0
+18:33:58.948196 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047271 ecr 262593523], length 0
+18:33:58.949584 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593523 ecr 8047265], length 0
+18:33:58.949598 IP 192.168.8.122.40736 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047271 ecr 262593523], length 0
+18:33:58.954924 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:58.970116 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40738: Flags [.], ack 1068, win 75, options [nop,nop,TS val 262593528 ecr 8047271], length 0
+18:33:58.970131 IP 167.206.145.25.https > 192.168.8.122.37580: Flags [.], ack 943, win 1672, options [nop,nop,TS val 3334054237 ecr 8047264], length 0
+18:33:58.973828 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40736: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593529 ecr 8047271], length 0
+18:33:59.085962 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [P.], seq 1077:1198, ack 1508, win 1672, options [nop,nop,TS val 3417379756 ecr 8047264], length 121
+18:33:59.086562 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [P.], seq 1198:1390, ack 1508, win 1672, options [nop,nop,TS val 3417379756 ecr 8047264], length 192
+18:33:59.086584 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [.], ack 1390, win 1444, options [nop,nop,TS val 8047306 ecr 3417379756], length 0
+18:33:59.087024 IP 192.168.8.122.51900 > 167.206.252.94.https: Flags [P.], seq 1508:1546, ack 1390, win 1444, options [nop,nop,TS val 8047306 ecr 3417379756], length 38
+18:33:59.104584 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 1546, win 1672, options [nop,nop,TS val 3417379774 ecr 8047306], length 0
+18:33:59.104595 IP 167.206.252.94.https > 192.168.8.122.51900: Flags [.], ack 1546, win 1672, options [nop,nop,TS val 3417379774 ecr 8047306], length 0
+18:33:59.122154 IP 173.194.68.189.https > 192.168.8.122.46805: UDP, length 420
+18:33:59.148330 IP 192.168.8.122.46805 > 173.194.68.189.https: UDP, length 38
+18:33:59.148902 IP 209.85.201.189.https > 192.168.8.122.52521: UDP, length 422
+18:33:59.174844 IP 192.168.8.122.52521 > 209.85.201.189.https: UDP, length 38
+18:33:59.235410 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:33:59.382936 IP 192.168.8.122.54267 > vdnssec1.srv.prnynj.cv.net.domain: 50976+ PTR? 25.145.206.167.in-addr.arpa. (45)
+18:33:59.401767 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.54267: 50976 NXDomain 0/1/0 (96)
+18:33:59.421193 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:59.450409 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:59.671438 IP6 fe80::d183:3b5:b240:a754.62755 > ff02::c.1900: UDP, length 150
+18:33:59.869131 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2874586911, win 29200, options [mss 1460,sackOK,TS val 8047501 ecr 0,nop,wscale 7], length 0
+18:33:59.869363 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 680695355, win 29200, options [mss 1460,sackOK,TS val 8047501 ecr 0,nop,wscale 7], length 0
+18:33:59.898461 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [S.], seq 1936085927, ack 2874586912, win 17898, options [mss 8961,sackOK,TS val 262593760 ecr 8047501,nop,wscale 8], length 0
+18:33:59.898499 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047508 ecr 262593760], length 0
+18:33:59.898664 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047509 ecr 262593760], length 517
+18:33:59.903020 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [S.], seq 3943697478, ack 680695356, win 17898, options [mss 8961,sackOK,TS val 262593761 ecr 8047501,nop,wscale 8], length 0
+18:33:59.903042 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047510 ecr 262593761], length 0
+18:33:59.903170 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047510 ecr 262593761], length 517
+18:33:59.921743 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:33:59.926664 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593767 ecr 8047509], length 0
+18:33:59.926675 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593767 ecr 8047509], length 137
+18:33:59.926682 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593767], length 0
+18:33:59.926793 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593767], length 51
+18:33:59.927214 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593767], length 498
+18:33:59.929755 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [.], ack 518, win 75, options [nop,nop,TS val 262593768 ecr 8047510], length 0
+18:33:59.929764 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262593768 ecr 8047510], length 137
+18:33:59.929771 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593768], length 0
+18:33:59.929868 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593768], length 51
+18:33:59.930188 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047516 ecr 262593768], length 498
+18:33:59.947666 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593773 ecr 8047516], length 0
+18:33:59.947678 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593773 ecr 8047516], length 31
+18:33:59.947900 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047521 ecr 262593773], length 0
+18:33:59.949160 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593773 ecr 8047516], length 0
+18:33:59.949171 IP 192.168.8.122.40740 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047521 ecr 262593773], length 0
+18:33:59.951092 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:33:59.952636 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262593774 ecr 8047516], length 0
+18:33:59.952646 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262593774 ecr 8047516], length 31
+18:33:59.952654 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262593774 ecr 8047516], length 0
+18:33:59.952822 IP 192.168.8.122.40742 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8047522 ecr 262593774], length 0
+18:33:59.968806 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40740: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593778 ecr 8047521], length 0
+18:33:59.977690 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40742: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262593780 ecr 8047522], length 0
+18:34:00.422066 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:00.451667 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:00.575826 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 43
+18:34:00.575835 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 20
+18:34:00.575923 IP 192.168.8.122.52296 > qg-in-f189.1e100.net.https: UDP, length 41
+18:34:00.582628 IP 192.168.8.122.35608 > 155.56.220.133.https: Flags [.], ack 3655430920, win 64400, options [nop,nop,TS val 8047680 ecr 322947535], length 0
+18:34:00.688463 IP 155.56.220.133.https > 192.168.8.122.35608: Flags [.], ack 1, win 7133, options [nop,nop,TS val 322992703 ecr 7991299], length 0
+18:34:00.873815 IP 192.168.8.122.52296 > qg-in-f189.1e100.net.https: UDP, length 321
+18:34:00.874122 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1193098334, win 29200, options [mss 1460,sackOK,TS val 8047752 ecr 0,nop,wscale 7], length 0
+18:34:00.874363 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 2829267863, win 29200, options [mss 1460,sackOK,TS val 8047752 ecr 0,nop,wscale 7], length 0
+18:34:00.895860 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [S.], seq 2632536684, ack 1193098335, win 17898, options [mss 8961,sackOK,TS val 262594010 ecr 8047752,nop,wscale 8], length 0
+18:34:00.895897 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047758 ecr 262594010], length 0
+18:34:00.896045 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047758 ecr 262594010], length 517
+18:34:00.897537 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [S.], seq 1581259176, ack 2829267864, win 17898, options [mss 8961,sackOK,TS val 262594010 ecr 8047752,nop,wscale 8], length 0
+18:34:00.897555 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8047758 ecr 262594010], length 0
+18:34:00.897680 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8047758 ecr 262594010], length 517
+18:34:00.922567 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:00.923648 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [.], ack 518, win 75, options [nop,nop,TS val 262594016 ecr 8047758], length 0
+18:34:00.924352 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [.], ack 518, win 75, options [nop,nop,TS val 262594016 ecr 8047758], length 0
+18:34:00.924358 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262594016 ecr 8047758], length 137
+18:34:00.924365 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 0
+18:34:00.924372 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262594016 ecr 8047758], length 137
+18:34:00.924377 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 0
+18:34:00.924481 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 51
+18:34:00.924876 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 51
+18:34:00.925198 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 498
+18:34:00.925280 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8047765 ecr 262594016], length 498
+18:34:00.927300 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 45
+18:34:00.945130 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 63
+18:34:00.945141 IP qg-in-f189.1e100.net.https > 192.168.8.122.52296: UDP, length 41
+18:34:00.945312 IP 192.168.8.122.52296 > qg-in-f189.1e100.net.https: UDP, length 44
+18:34:00.947956 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 0
+18:34:00.947971 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 0
+18:34:00.947980 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 31
+18:34:00.948200 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047771 ecr 262594023], length 0
+18:34:00.948704 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 0
+18:34:00.948711 IP 192.168.8.122.40744 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047771 ecr 262594023], length 0
+18:34:00.948714 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 31
+18:34:00.948863 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8047771 ecr 262594023], length 0
+18:34:00.950426 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262594023 ecr 8047765], length 0
+18:34:00.950433 IP 192.168.8.122.40746 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8047771 ecr 262594023], length 0
+18:34:00.951893 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:00.968219 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40744: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262594028 ecr 8047765], length 0
+18:34:00.971918 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40746: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262594029 ecr 8047771], length 0
+18:34:01.222610 IP 192.168.8.122.59710 > 64.74.101.66.https: Flags [.], ack 1772009920, win 369, length 0
+18:34:01.222675 IP 192.168.8.122.59712 > 64.74.101.66.https: Flags [.], ack 4140026716, win 370, length 0
+18:34:01.235138 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+18:34:01.244658 IP 64.74.101.66.https > 192.168.8.122.59712: Flags [.], ack 1, win 2560, length 0
+18:34:01.246143 IP 64.74.101.66.https > 192.168.8.122.59710: Flags [.], ack 1, win 2560, length 0
+18:34:01.383011 IP 192.168.8.122.4475 > vdnssec1.srv.prnynj.cv.net.domain: 842+ PTR? 66.101.74.64.in-addr.arpa. (43)
+18:34:01.406772 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.4475: 842 NXDomain 0/1/0 (106)
+18:34:01.422826 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:01.452041 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:01.478577 IP 192.168.8.122.35542 > a23-54-181-103.deploy.static.akamaitechnologies.com.https: Flags [.], ack 1911167941, win 342, options [nop,nop,TS val 8047904 ecr 2061129351], length 0
+18:34:01.493696 IP a23-54-181-103.deploy.static.akamaitechnologies.com.https > 192.168.8.122.35542: Flags [.], ack 1, win 978, options [nop,nop,TS val 2061174407 ecr 8025370], length 0
+18:34:01.610636 IP 192.168.8.122.40296 > a184-50-211-21.deploy.static.akamaitechnologies.com.https: Flags [.], ack 3779511862, win 340, options [nop,nop,TS val 8047937 ecr 2061082893], length 0
+18:34:01.610641 IP 192.168.8.122.59418 > 173.194.68.188.5228: Flags [.], ack 1449891982, win 1444, options [nop,nop,TS val 8047937 ecr 2554747323], length 0
+18:34:01.624428 IP a184-50-211-21.deploy.static.akamaitechnologies.com.https > 192.168.8.122.40296: Flags [.], ack 1, win 974, options [nop,nop,TS val 2061127939 ecr 8025421], length 0
+18:34:01.628132 IP ec2-52-86-212-66.compute-1.amazonaws.com.https > 192.168.8.122.38172: Flags [P.], seq 85166823:85166868, ack 2810661501, win 79, options [nop,nop,TS val 5231634 ecr 8041691], length 45
+18:34:01.628142 IP 192.168.8.122.38172 > ec2-52-86-212-66.compute-1.amazonaws.com.https: Flags [.], ack 45, win 245, options [nop,nop,TS val 8047941 ecr 5231634], length 0
+18:34:01.642836 IP 173.194.68.188.5228 > 192.168.8.122.59418: Flags [.], ack 1, win 360, options [nop,nop,TS val 2554792373 ecr 8014134], length 0
+18:34:01.734577 IP 192.168.8.122.50358 > a104-97-91-69.deploy.static.akamaitechnologies.com.https: Flags [.], ack 1817421079, win 255, options [nop,nop,TS val 8047968 ecr 2379403024], length 0
+18:34:01.749745 IP a104-97-91-69.deploy.static.akamaitechnologies.com.https > 192.168.8.122.50358: Flags [.], ack 1, win 1019, options [nop,nop,TS val 2379448081 ecr 7980393], length 0
+18:34:01.872640 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 1473005008, win 29200, options [mss 1460,sackOK,TS val 8048002 ecr 0,nop,wscale 7], length 0
+18:34:01.873038 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [S], seq 3449682862, win 29200, options [mss 1460,sackOK,TS val 8048002 ecr 0,nop,wscale 7], length 0
+18:34:01.895054 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [S.], seq 1919529153, ack 1473005009, win 17898, options [mss 8961,sackOK,TS val 262594259 ecr 8048002,nop,wscale 8], length 0
+18:34:01.895090 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8048008 ecr 262594259], length 0
+18:34:01.895237 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8048008 ecr 262594259], length 517
+18:34:01.899648 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [S.], seq 176090472, ack 3449682863, win 17898, options [mss 8961,sackOK,TS val 262594260 ecr 8048002,nop,wscale 8], length 0
+18:34:01.899667 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8048009 ecr 262594260], length 0
+18:34:01.899793 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8048009 ecr 262594260], length 517
+18:34:01.917244 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [.], ack 518, win 75, options [nop,nop,TS val 262594265 ecr 8048008], length 0
+18:34:01.917254 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262594265 ecr 8048008], length 137
+18:34:01.917261 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8048013 ecr 262594265], length 0
+18:34:01.917370 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8048013 ecr 262594265], length 51
+18:34:01.917791 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8048013 ecr 262594265], length 498
+18:34:01.923316 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:01.925945 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [.], ack 518, win 75, options [nop,nop,TS val 262594267 ecr 8048009], length 0
+18:34:01.925955 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [P.], seq 1:138, ack 518, win 75, options [nop,nop,TS val 262594267 ecr 8048009], length 137
+18:34:01.925962 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 138, win 237, options [nop,nop,TS val 8048015 ecr 262594267], length 0
+18:34:01.926064 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 518:569, ack 138, win 237, options [nop,nop,TS val 8048015 ecr 262594267], length 51
+18:34:01.926364 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [P.], seq 569:1067, ack 138, win 237, options [nop,nop,TS val 8048015 ecr 262594267], length 498
+18:34:01.936519 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [P.], seq 138:169, ack 569, win 75, options [nop,nop,TS val 262594270 ecr 8048013], length 31
+18:34:01.936750 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 169, win 237, options [nop,nop,TS val 8048018 ecr 262594270], length 0
+18:34:01.938003 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [F.], seq 169, ack 569, win 75, options [nop,nop,TS val 262594270 ecr 8048013], length 0
+18:34:01.938015 IP 192.168.8.122.40748 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [.], ack 170, win 237, options [nop,nop,TS val 8048018 ecr 262594270], length 0
+18:34:01.948027 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [.], ack 1067, win 79, options [nop,nop,TS val 262594273 ecr 8048015], length 0
+18:34:01.948744 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [P.], seq 138:169, ack 1067, win 79, options [nop,nop,TS val 262594273 ecr 8048015], length 31
+18:34:01.948754 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [F.], seq 169, ack 1067, win 79, options [nop,nop,TS val 262594273 ecr 8048015], length 0
+18:34:01.948925 IP 192.168.8.122.40750 > ec2-54-236-117-189.compute-1.amazonaws.com.https: Flags [F.], seq 1067, ack 170, win 237, options [nop,nop,TS val 8048021 ecr 262594273], length 0
+18:34:01.952241 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:01.957142 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40748: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262594275 ecr 8048013], length 0
+18:34:01.970231 IP ec2-54-236-117-189.compute-1.amazonaws.com.https > 192.168.8.122.40750: Flags [.], ack 1068, win 79, options [nop,nop,TS val 262594278 ecr 8048021], length 0
+18:34:02.374584 IP 192.168.8.122.56468 > 167.206.145.59.https: Flags [.], ack 2911110006, win 2937, options [nop,nop,TS val 8048128 ecr 826719283], length 0
+18:34:02.382925 IP 192.168.8.122.59780 > vdnssec1.srv.prnynj.cv.net.domain: 60431+ PTR? 103.181.54.23.in-addr.arpa. (44)
+18:34:02.387854 IP 167.206.145.59.https > 192.168.8.122.56468: Flags [.], ack 1, win 684, options [nop,nop,TS val 826764340 ecr 8025607], length 0
+18:34:02.418115 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.59780: 60431 1/0/0 PTR a23-54-181-103.deploy.static.akamaitechnologies.com. (109)
+18:34:02.418404 IP 192.168.8.122.62699 > vdnssec1.srv.prnynj.cv.net.domain: 2580+ PTR? 21.211.50.184.in-addr.arpa. (44)
+18:34:02.423643 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:02.452233 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.62699: 2580 1/0/0 PTR a184-50-211-21.deploy.static.akamaitechnologies.com. (109)
+18:34:02.452245 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:02.452582 IP 192.168.8.122.64188 > vdnssec1.srv.prnynj.cv.net.domain: 22959+ PTR? 188.68.194.173.in-addr.arpa. (45)
+18:34:02.466264 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.64188: 22959 NXDomain 0/1/0 (105)
+18:34:02.466479 IP 192.168.8.122.13470 > vdnssec1.srv.prnynj.cv.net.domain: 52775+ PTR? 66.212.86.52.in-addr.arpa. (43)
+18:34:02.486737 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.13470: 52775 1/0/0 PTR ec2-52-86-212-66.compute-1.amazonaws.com. (97)
+18:34:02.487055 IP 192.168.8.122.46821 > vdnssec1.srv.prnynj.cv.net.domain: 55809+ PTR? 69.91.97.104.in-addr.arpa. (43)
+18:34:02.520861 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.46821: 55809 1/0/0 PTR a104-97-91-69.deploy.static.akamaitechnologies.com. (107)
+18:34:02.521330 IP 192.168.8.122.61979 > vdnssec1.srv.prnynj.cv.net.domain: 33539+ PTR? 59.145.206.167.in-addr.arpa. (45)
+18:34:02.536811 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.61979: 33539 NXDomain 0/1/0 (96)
+18:34:02.869432 IP 192.168.8.122.12745 > vdnssec1.srv.prnynj.cv.net.domain: 21372+ A? pubsub.hackerrank.com. (39)
+18:34:02.890244 IP vdnssec1.srv.prnynj.cv.net.domain > 192.168.8.122.12745: 21372 5/0/0 A 54.173.139.155, A 52.86.212.66, A 54.236.117.189, A 52.7.180.206, A 54.164.49.180 (119)
+18:34:02.890566 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [S], seq 2259164901, win 29200, options [mss 1460,sackOK,TS val 8048257 ecr 0,nop,wscale 7], length 0
+18:34:02.890594 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [S], seq 4126544873, win 29200, options [mss 1460,sackOK,TS val 8048257 ecr 0,nop,wscale 7], length 0
+18:34:02.911801 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [S.], seq 3923753824, ack 2259164902, win 17898, options [mss 1460,sackOK,TS val 262759178 ecr 8048257,nop,wscale 8], length 0
+18:34:02.911828 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8048262 ecr 262759178], length 0
+18:34:02.911996 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8048262 ecr 262759178], length 517
+18:34:02.915390 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [S.], seq 1771354408, ack 4126544874, win 17898, options [mss 1460,sackOK,TS val 262759179 ecr 8048257,nop,wscale 8], length 0
+18:34:02.915411 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 8048263 ecr 262759179], length 0
+18:34:02.915541 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 1:518, ack 1, win 229, options [nop,nop,TS val 8048263 ecr 262759179], length 517
+18:34:02.923984 IP 192.168.8.122.49334 > qh-in-f127.1e100.net.19305: UDP, length 116
+18:34:02.937991 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [.], ack 518, win 75, options [nop,nop,TS val 262759184 ecr 8048262], length 0
+18:34:02.939283 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [.], seq 1:1449, ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048262], length 1448
+18:34:02.939293 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 1449, win 251, options [nop,nop,TS val 8048269 ecr 262759185], length 0
+18:34:02.939301 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [P.], seq 2897:3563, ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048262], length 666
+18:34:02.939308 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 1449, win 274, options [nop,nop,TS val 8048269 ecr 262759185,nop,nop,sack 1 {2897:3563}], length 0
+18:34:02.940184 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [.], ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048263], length 0
+18:34:02.940193 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [.], seq 1449:2897, ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048262], length 1448
+18:34:02.940205 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 3563, win 296, options [nop,nop,TS val 8048269 ecr 262759185], length 0
+18:34:02.941356 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 518:644, ack 3563, win 296, options [nop,nop,TS val 8048269 ecr 262759185], length 126
+18:34:02.943272 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [.], seq 1:2897, ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048263], length 2896
+18:34:02.943281 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 2897, win 274, options [nop,nop,TS val 8048270 ecr 262759185], length 0
+18:34:02.943515 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [P.], seq 2897:3563, ack 518, win 75, options [nop,nop,TS val 262759185 ecr 8048263], length 666
+18:34:02.943526 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 3563, win 296, options [nop,nop,TS val 8048270 ecr 262759185], length 0
+18:34:02.944600 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 518:644, ack 3563, win 296, options [nop,nop,TS val 8048270 ecr 262759185], length 126
+18:34:02.952679 IP qh-in-f127.1e100.net.19305 > 192.168.8.122.49334: UDP, length 104
+18:34:02.963665 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [P.], seq 3563:3805, ack 644, win 75, options [nop,nop,TS val 262759191 ecr 8048269], length 242
+18:34:02.964412 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 644:1142, ack 3805, win 319, options [nop,nop,TS val 8048275 ecr 262759191], length 498
+18:34:02.965008 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [P.], seq 3805:3836, ack 644, win 75, options [nop,nop,TS val 262759192 ecr 8048269], length 31
+18:34:02.965273 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [F.], seq 1142, ack 3836, win 319, options [nop,nop,TS val 8048275 ecr 262759192], length 0
+18:34:02.966440 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [F.], seq 3836, ack 644, win 75, options [nop,nop,TS val 262759192 ecr 8048269], length 0
+18:34:02.966453 IP 192.168.8.122.45236 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [.], ack 3837, win 319, options [nop,nop,TS val 8048275 ecr 262759192], length 0
+18:34:02.969382 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [P.], seq 3563:3805, ack 644, win 75, options [nop,nop,TS val 262759192 ecr 8048270], length 242
+18:34:02.969785 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [P.], seq 644:1142, ack 3805, win 319, options [nop,nop,TS val 8048276 ecr 262759192], length 498
+18:34:02.970041 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [P.], seq 3805:3836, ack 644, win 75, options [nop,nop,TS val 262759193 ecr 8048270], length 31
+18:34:02.970051 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [F.], seq 3836, ack 644, win 75, options [nop,nop,TS val 262759193 ecr 8048270], length 0
+18:34:02.970212 IP 192.168.8.122.45238 > ec2-54-173-139-155.compute-1.amazonaws.com.https: Flags [F.], seq 1142, ack 3837, win 319, options [nop,nop,TS val 8048276 ecr 262759193], length 0
+18:34:02.988197 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45236: Flags [.], ack 1143, win 79, options [nop,nop,TS val 262759197 ecr 8048275], length 0
+18:34:02.991799 IP ec2-54-173-139-155.compute-1.amazonaws.com.https > 192.168.8.122.45238: Flags [.], ack 1143, win 79, options [nop,nop,TS val 262759198 ecr 8048276], length 0
+18:34:03.142498 IP 192.168.8.122.57718 > 104.16.22.35.https: Flags [.], ack 264706571, win 2483, length 0
+18:34:03.142503 IP 192.168.8.122.47852 > 104.16.25.235.https: Flags [.], ack 3502484301, win 328, length 0
+18:34:03.158913 IP 104.16.25.235.https > 192.168.8.122.47852: Flags [.], ack 1, win 31, length 0
+18:34:03.158922 IP 104.16.22.35.https > 192.168.8.122.57718: Flags [.], ack 1, win 35, length 0
+18:34:03.235198 STP 802.1d, Config, Flags [none], bridge-id 801e.28:57:67:b1:fa:47.0c01, length 43
+
